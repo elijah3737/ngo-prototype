@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>API 610: что значит и как подобрать насос — NGO Group</title>
+<meta name="description" content="Стандарт API 610 на центробежные насосы для нефтепереработки: типы исполнений OH, BB, VS, параметры подбора, оригинал или аналог. Гайд для снабженцев и инженеров.">
+<link rel="canonical" href="https://ngo.group/blog-api610/">
+<meta property="og:title" content="API 610: что значит и как подобрать насос">
+<meta property="og:description" content="Стандарт API 610 на центробежные насосы для нефтепереработки: типы исполнений OH, BB, VS, параметры подбора, оригинал или аналог. Гайд для снабженцев и инженеров.">
+<meta property="og:type" content="article">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
+<link rel="stylesheet" href="assets/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "API 610: что значит и как подобрать насос", "description": "Стандарт API 610 на центробежные насосы для нефтепереработки: типы исполнений OH, BB, VS, параметры подбора, оригинал или аналог. Гайд для снабженцев и инженеров.", "author": {"@type": "Organization", "name": "ООО «НГО»"}, "publisher": {"@type": "Organization", "name": "ООО «НГО»"}, "datePublished": "2026-07-01", "dateModified": "2026-07-23", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://ngo.group/blog-api610/"}, "articleSection": "Гайды"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Что означает маркировка OH2 или BB3?", "acceptedAnswer": {"@type": "Answer", "text": "Это подтипы исполнений по API 610: OH2 — консольный насос на опорной раме с центральной опорой корпуса, BB3 — многоступенчатый с горизонтальным разъёмом корпуса. Подтип обычно указан в спецификации проекта."}}, {"@type": "Question", "name": "Можно ли заменить насос API 610 обычным центробежным?", "acceptedAnswer": {"@type": "Answer", "text": "Как правило нет: стандарт задаёт требования к конструкции, испытаниям и документации, которые обычный насос общепромышленного исполнения не подтверждает. Замену следует согласовывать с проектировщиком."}}, {"@type": "Question", "name": "Какие данные нужны, если опросного листа нет?", "acceptedAnswer": {"@type": "Answer", "text": "Расход, напор, среда и её температура, давление на всасывании, а также маркировка или фото шильдика существующего насоса. Этого достаточно для первичного подбора."}}, {"@type": "Question", "name": "Поставляете ли вы ЗИП к насосам API 610?", "acceptedAnswer": {"@type": "Answer", "text": "Да: торцевые уплотнения, рабочие колёса, валы, подшипниковые узлы — по артикулу, чертежу или образцу. Работаем с оригиналом и проверенными аналогами."}}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Главная", "item": "https://ngo.group/"}, {"@type": "ListItem", "position": 2, "name": "Блог", "item": "https://ngo.group/blog/"}, {"@type": "ListItem", "position": 3, "name": "API 610: что значит и как подобрать насос", "item": "https://ngo.group/blog-api610/"}]}</script>
+</head>
+<body>
+<div class="read-progress" id="readProgress"></div>
+<header class="header">
+  <div class="header-in">
+    <a href="index.html" class="logo"><span class="logo-plate"><img src="img/logo.png" alt="НГО" class="logo-img"></span></a>
+    <nav class="nav" aria-label="Основная навигация">
+      <a href="catalog.html">Оборудование</a>
+      <a href="services.html">Услуги</a>
+      <a href="projects.html">Кейсы</a>
+      <a href="blog.html">Блог</a>
+      <a href="about.html">О компании</a>
+      <a href="contacts.html">Контакты</a>
+    </nav>
+    <div class="header-cta">
+      <button class="search-btn" id="searchBtn" aria-label="Поиск по сайту"><i class="ph ph-magnifying-glass" aria-hidden="true"></i><span>Поиск</span><kbd>/</kbd></button>
+      <a href="tel:+78127773691" class="header-phone">+7 (812) 777-36-91</a>
+      <a href="#contacts" class="btn btn-copper btn-header">Обсудить задачу</a>
+      <button class="burger" id="burger" aria-label="Меню">☰</button>
+    </div>
+  </div>
+</header>
+<div class="search-backdrop" id="searchBackdrop"></div>
+<div class="search-panel" id="searchPanel" role="dialog" aria-label="Поиск по каталогу">
+  <div class="search-in">
+    <div class="search-row2">
+      <i class="ph ph-magnifying-glass" aria-hidden="true"></i>
+      <input id="searchInput" type="text" placeholder="Артикул, бренд или категория…" autocomplete="off">
+      <button class="search-close" id="searchClose">ESC ✕</button>
+    </div>
+    <div class="search-hint">Например: <button type="button" data-q="3406E">3406E</button> · <button type="button" data-q="Hydac">Hydac</button> · <button type="button" data-q="теплообменник">теплообменник</button> · <button type="button" data-q="уплотнения">уплотнения</button></div>
+    <div class="search-res" id="searchRes"></div>
+  </div>
+</div>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="catalog.html">Оборудование</a>
+  <a href="services.html">Услуги</a>
+  <a href="projects.html">Кейсы</a>
+  <a href="blog.html">Блог</a>
+  <a href="about.html">О компании</a>
+  <a href="contacts.html">Контакты</a>
+  <a href="tel:+78127773691">+7 (812) 777-36-91</a>
+</div>
+
+
+
+
+<div class="container">
+<nav class="crumbs"><a href="index.html">Главная</a> / <a href="blog.html">Блог</a> / <span>API 610: что значит и как подобрать насос</span></nav>
+<div class="article-wrap">
+  <div class="article-grid">
+    <article class="article-body">
+      <h1>API 610: что значит и как подобрать насос</h1>
+      <div class="art-head-meta">
+        <span class="rub">Гайды</span><span class="sep">·</span>
+        <span>5 минут чтения</span><span class="sep">·</span>
+        <span>обновлено 23.07.2026</span>
+      </div>
+      <p class="lead">API 610 — международный стандарт на центробежные насосы для нефтепереработки, нефтехимии и газовой промышленности. Если в спецификации указано «насос по API 610», это задаёт жёсткие требования к конструкции, материалам и испытаниям. Разберём, что стоит за стандартом и какие данные нужны для подбора.</p>
+
+      <div class="tldr">
+        <h2>Коротко</h2>
+        <ul><li>API 610 — стандарт на центробежные насосы для тяжёлых условий, гармонизирован с ISO 13709.</li><li>Три базовых типа исполнений: OH (консольные), BB (с опорой с двух сторон), VS (вертикальные погружные).</li><li>Для подбора нужны расход, напор, среда и её температура, давление и требования к уплотнениям.</li><li>Аналог подбирают в том же классе исполнения; для критичных позиций замену согласуют с проектировщиком.</li></ul>
+      </div>
+
+      <div class="def-block"><p><span class="def-term">API 610</span> — стандарт Американского нефтяного института на центробежные насосы для тяжёлых условий эксплуатации: высокие температуры, агрессивные и горючие среды, непрерывная работа. Действующая редакция гармонизирована с ISO 13709.</p></div>
+
+      <h2 id="a1">Что такое API 610</h2>
+      <p>Стандарт регламентирует не «качество вообще», а конкретные вещи: тип корпуса и его прочность, систему уплотнений, конструкцию опор и подшипников, допустимые нагрузки на патрубки, материальное исполнение и обязательные заводские испытания.</p>
+      <p>Для заказчика это означает предсказуемость: насос, изготовленный по API 610, рассчитан на непрерывную работу в опасной среде и имеет подтверждённые характеристики.</p>
+
+      <h2 id="a2">Типы исполнений</h2>
+      <div class="table-scroll"><table class="spec-table">
+        <tr><th>OH (Overhung)</th><td>консольные: рабочее колесо на консоли вала. Простые, распространённые, компактные.</td></tr>
+        <tr><th>BB (Between Bearings)</th><td>вал опирается с двух сторон. Для высоких напоров и давлений, многоступенчатые исполнения.</td></tr>
+        <tr><th>VS (Vertical Suspended)</th><td>вертикальные погружные. Для низкого подпора на всасывании и больших объёмов.</td></tr>
+      </table></div>
+      <p>Внутри каждой группы есть подтипы (OH1, OH2, BB2, BB3 и так далее) — они различаются опорой корпуса, разъёмом и способом установки. В спецификации обычно указан конкретный подтип.</p>
+
+      <h2 id="a3">Параметры подбора</h2>
+      <p>Насос подбирают по рабочей точке, а не по названию модели. Минимальный набор данных:</p>
+      <ul class="check-list" style="margin:16px 0 20px;">
+        <li>расход (производительность), м³/ч</li>
+        <li>напор, м, и рабочее давление</li>
+        <li>перекачиваемая среда, её плотность, вязкость и температура</li>
+        <li>давление на всасывании и доступный NPSH</li>
+        <li>требования к материальному исполнению и уплотнениям</li>
+      </ul>
+
+      <h2 id="a4">Уплотнения и материалы</h2>
+      <p>Торцевые уплотнения для насосов API 610 подбирают по сопряжённому стандарту API 682: он задаёт схемы уплотнений и вспомогательные системы (Plan 11, Plan 52, Plan 53 и другие). Ошибка на этом шаге — частая причина преждевременного выхода насоса из строя.</p>
+      <p>Материальное исполнение выбирают по среде: от углеродистой стали до дуплексных нержавеющих сталей для агрессивных и хлоридсодержащих сред.</p>
+
+      <h2 id="a5">Оригинал или аналог</h2>
+      <p>Насосы по API 610 выпускают Grundfos, KSB, Sundyne и другие производители. При недоступности оригинала подбирают аналог того же класса исполнения с совместимыми присоединительными размерами и характеристиками в рабочей точке.</p>
+      <p>Для критичных позиций замену согласуют с проектной организацией: помимо гидравлики проверяют нагрузки на патрубки, схему уплотнения и требования по документации.</p>
+
+      <h2 id="a6">Что прислать для подбора</h2>
+      <p>Быстрее всего работает опросный лист: в нём собраны все нужные поля. Если листа нет — достаточно рабочей точки, среды и маркировки существующего насоса или фото шильдика.</p>
+      <div class="callout"><p><strong>Нужен насос по API 610?</strong> Пришлите опросный лист или рабочие параметры — подберём оригинал или аналог с обоснованием замены. <a href="#contacts" style="color:var(--teal); font-weight:600;">Отправить запрос →</a></p></div>
+
+      <div class="art-faq">
+        <h2 style="font-size:24px; margin:0 0 6px;">Частые вопросы</h2>
+        <details><summary>Что означает маркировка OH2 или BB3?</summary><div class="faq-a">Это подтипы исполнений по API 610: OH2 — консольный насос на опорной раме с центральной опорой корпуса, BB3 — многоступенчатый с горизонтальным разъёмом корпуса. Подтип обычно указан в спецификации проекта.</div></details><details><summary>Можно ли заменить насос API 610 обычным центробежным?</summary><div class="faq-a">Как правило нет: стандарт задаёт требования к конструкции, испытаниям и документации, которые обычный насос общепромышленного исполнения не подтверждает. Замену следует согласовывать с проектировщиком.</div></details><details><summary>Какие данные нужны, если опросного листа нет?</summary><div class="faq-a">Расход, напор, среда и её температура, давление на всасывании, а также маркировка или фото шильдика существующего насоса. Этого достаточно для первичного подбора.</div></details><details><summary>Поставляете ли вы ЗИП к насосам API 610?</summary><div class="faq-a">Да: торцевые уплотнения, рабочие колёса, валы, подшипниковые узлы — по артикулу, чертежу или образцу. Работаем с оригиналом и проверенными аналогами.</div></details>
+      </div>
+
+      <div class="art-author">
+        <div class="ico"><i class="ph ph-gear-six" aria-hidden="true"></i></div>
+        <div>
+          <div class="who">Материал подготовлен инженерами ООО «НГО»</div>
+          <div class="what">Отдел технических поставок: подбор оборудования и ЗИП по параметрам, аналоги, комплектация. Есть вопрос по вашей задаче — пришлите параметры, ответим в течение 24 часов в рабочие дни.</div>
+        </div>
+      </div>
+
+      <div class="read-next"><div class="rn-title">Читайте также</div><div class="rn-grid"><a href="blog-nitrogen.html" class="rn-card">
+        <img src="img/cat-nitrogen.jpg" alt="" loading="lazy" decoding="async">
+        <div><div class="rn-rub">Принципы работы</div><h3>Принцип работы азотной установки</h3></div>
+      </a><a href="blog-filters.html" class="rn-card">
+        <img src="img/cat-filter.jpg" alt="" loading="lazy" decoding="async">
+        <div><div class="rn-rub">Отраслевое</div><h3>Фильтры-сепараторы: что важно при подборе</h3></div>
+      </a></div></div>
+    </article>
+    <aside class="toc">
+      <span class="small-label" style="display:block; margin-bottom:12px;">Содержание</span>
+      <a href="#a1">Что такое API 610</a><a href="#a2">Типы исполнений</a><a href="#a3">Параметры подбора</a><a href="#a4">Уплотнения и материалы</a><a href="#a5">Оригинал или аналог</a><a href="#a6">Что прислать для подбора</a>
+    </aside>
+  </div>
+</div>
+</div>
+
+<section class="final-cta" id="contacts">
+  <div class="final-in">
+    <div>
+      <h2>Нужен насос по API 610?</h2>
+      <p class="final-sub">Пришлите опросный лист или рабочие параметры — подберём оригинал или аналог с обоснованием и подготовим предложение.</p>
+    </div>
+    <form class="tz-form" data-tz>
+      <input type="text" required placeholder="Как к вам обращаться" aria-label="Имя">
+      <input type="text" required placeholder="Телефон или e-mail" aria-label="Телефон или e-mail">
+      <label class="tz-upload"><input type="file" hidden multiple>⇪ Прикрепить ТЗ или опросный лист (PDF, DOC, XLS до 10 МБ)</label>
+      <button type="submit" class="btn btn-copper">Отправить запрос</button>
+      <p class="tz-fine">Нажимая кнопку, вы соглашаетесь на обработку данных. Ответ инженера — в течение 24 часов в рабочие дни.</p>
+    </form>
+  </div>
+</section>
+<footer class="footer">
+  <div class="footer-in">
+    <div class="footer-grid">
+      <div>
+        <a href="index.html" class="logo"><span class="logo-plate"><img src="img/logo.png" alt="НГО" class="logo-img"></span></a>
+        <p class="footer-about">Поставляем промышленное оборудование, запасные части и комплектующие. Подбор ведут инженеры. Санкт-Петербург.</p>
+      </div>
+      <div>
+        <div class="footer-h">Оборудование</div>
+        <a href="pumps.html">Насосы</a>
+        <a href="filters.html">Фильтры и теплообменники</a>
+        <a href="caterpillar.html">Двигатели и ЗИП</a>
+        <a href="brands.html">Бренды</a>
+        <a href="catalog.html">Все категории →</a>
+      </div>
+      <div>
+        <div class="footer-h">Компания</div>
+        <a href="blog.html">Блог / База знаний</a>
+        <a href="about.html">О компании</a>
+        <a href="projects.html">Проекты</a>
+        <a href="services.html">Услуги</a>
+      </div>
+      <div>
+        <div class="footer-h">Контакты</div>
+        <a href="tel:+78127773691">+7 (812) 777-36-91</a>
+        <a href="mailto:info@ngo.spb.ru">info@ngo.spb.ru</a>
+        <a href="contacts.html">Санкт-Петербург</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 ООО «НГО». Поставки промышленного оборудования и ЗИП.</span>
+      <span>Санкт-Петербург · работаем по всей России</span>
+    </div>
+  </div>
+</footer>
+<script src="assets/app.js"></script>
+<script>
+/* прогресс чтения */
+var pb = document.getElementById('readProgress');
+var art = document.querySelector('.article-body');
+function updProgress() {
+  if (!art || !pb) return;
+  var r = art.getBoundingClientRect();
+  var total = r.height - window.innerHeight;
+  var passed = Math.min(Math.max(-r.top, 0), Math.max(total, 1));
+  pb.style.width = (total > 0 ? (passed / total) * 100 : 0) + '%';
+}
+/* активный пункт оглавления */
+var tocLinks = [].slice.call(document.querySelectorAll('.toc a'));
+var heads = tocLinks.map(function (a) { return document.getElementById(a.getAttribute('href').slice(1)); });
+function updToc() {
+  var idx = 0;
+  heads.forEach(function (h, i) { if (h && h.getBoundingClientRect().top < 160) idx = i; });
+  tocLinks.forEach(function (a, i) { a.classList.toggle('active', i === idx); });
+}
+var ticking = false;
+function onScroll() {
+  if (ticking) return;
+  ticking = true;
+  requestAnimationFrame(function () { updProgress(); updToc(); ticking = false; });
+}
+window.addEventListener('scroll', onScroll, { passive: true });
+document.addEventListener('scroll', onScroll, { passive: true });
+updProgress(); updToc();
+
+/* подсветка оглавления через IntersectionObserver (независимо от scroll-событий) */
+if ('IntersectionObserver' in window && heads.filter(Boolean).length) {
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) {
+      if (!e.isIntersecting) return;
+      var i = heads.indexOf(e.target);
+      if (i > -1) tocLinks.forEach(function (a, j) { a.classList.toggle('active', j === i); });
+    });
+  }, { rootMargin: '-140px 0px -70% 0px', threshold: 0 });
+  heads.forEach(function (h) { if (h) io.observe(h); });
+}
+</script>
+</body>
+</html>

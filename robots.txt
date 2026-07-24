@@ -1,0 +1,4 @@
+# Прототип. На проде: разрешить индексацию, указать sitemap
+User-agent: *
+Allow: /
+Sitemap: https://ngo.group/sitemap.xml

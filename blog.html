@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Блог и база знаний по промышленному оборудованию — NGO Group</title>
+<meta name="description" content="Экспертные статьи: принципы работы азотных установок, стандарт API 610, оригинал против аналога, сертификация ТР ТС. База знаний для снабженцев и инженеров.">
+<link rel="canonical" href="https://ngo.group/blog/">
+<meta property="og:title" content="Блог и база знаний по промышленному оборудованию — NGO Group">
+<meta property="og:description" content="Экспертные статьи: принципы работы азотных установок, стандарт API 610, оригинал против аналога, сертификация ТР ТС. База знаний для снабженцев и инженеров.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
+<link rel="stylesheet" href="assets/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Главная", "item": "https://ngo.group/"}, {"@type": "ListItem", "position": 2, "name": "Блог", "item": "https://ngo.group/blog/"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Blog", "name": "Блог и база знаний NGO Group", "description": "Экспертные материалы по промышленному оборудованию для нефтегаза: принципы работы, стандарты, импортозамещение.", "publisher": {"@type": "Organization", "name": "ООО «НГО»"}, "blogPost": [{"@type": "BlogPosting", "headline": "Принцип работы азотной установки", "url": "https://ngo.group/blog-nitrogen/", "description": "Мембранные и адсорбционные (PSA) генераторы азота: устройство, применение в нефтегазе, параметры подбора."}, {"@type": "BlogPosting", "headline": "API 610: что значит и как подобрать насос", "url": "https://ngo.group/blog-api610/", "description": "Стандарт API 610: типы исполнений OH, BB, VS и параметры подбора центробежных насосов."}]}</script>
+</head>
+<body>
+<header class="header">
+  <div class="header-in">
+    <a href="index.html" class="logo"><span class="logo-plate"><img src="img/logo.png" alt="НГО" class="logo-img"></span></a>
+    <nav class="nav" aria-label="Основная навигация">
+      <a href="catalog.html">Оборудование</a>
+      <a href="services.html">Услуги</a>
+      <a href="projects.html">Кейсы</a>
+      <a href="blog.html">Блог</a>
+      <a href="about.html">О компании</a>
+      <a href="contacts.html">Контакты</a>
+    </nav>
+    <div class="header-cta">
+      <button class="search-btn" id="searchBtn" aria-label="Поиск по сайту"><i class="ph ph-magnifying-glass" aria-hidden="true"></i><span>Поиск</span><kbd>/</kbd></button>
+      <a href="tel:+78127773691" class="header-phone">+7 (812) 777-36-91</a>
+      <a href="#contacts" class="btn btn-copper btn-header">Обсудить задачу</a>
+      <button class="burger" id="burger" aria-label="Меню">☰</button>
+    </div>
+  </div>
+</header>
+<div class="search-backdrop" id="searchBackdrop"></div>
+<div class="search-panel" id="searchPanel" role="dialog" aria-label="Поиск по каталогу">
+  <div class="search-in">
+    <div class="search-row2">
+      <i class="ph ph-magnifying-glass" aria-hidden="true"></i>
+      <input id="searchInput" type="text" placeholder="Артикул, бренд или категория…" autocomplete="off">
+      <button class="search-close" id="searchClose">ESC ✕</button>
+    </div>
+    <div class="search-hint">Например: <button type="button" data-q="3406E">3406E</button> · <button type="button" data-q="Hydac">Hydac</button> · <button type="button" data-q="теплообменник">теплообменник</button> · <button type="button" data-q="уплотнения">уплотнения</button></div>
+    <div class="search-res" id="searchRes"></div>
+  </div>
+</div>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="catalog.html">Оборудование</a>
+  <a href="services.html">Услуги</a>
+  <a href="projects.html">Кейсы</a>
+  <a href="blog.html">Блог</a>
+  <a href="about.html">О компании</a>
+  <a href="contacts.html">Контакты</a>
+  <a href="tel:+78127773691">+7 (812) 777-36-91</a>
+</div>
+
+
+
+<div class="container">
+<nav class="crumbs"><a href="index.html">Главная</a> / <span>Блог</span></nav>
+<div class="cat-head">
+    <span class="small-label">База знаний</span>
+    <h1 style="margin-top:18px;">Блог и база знаний</h1>
+    <p class="lead">Разбираем оборудование для нефтегаза: принципы работы, стандарты, подбор аналогов. Помогаем разобраться в технике и сформулировать запрос.</p>
+  </div>
+</div>
+<section class="subcats">
+  <div class="container">
+    <div class="blog-filters" role="tablist" aria-label="Рубрики">
+      <button class="active" data-rub="all">Все материалы</button>
+      <button data-rub="guides">Гайды</button>
+      <button data-rub="principles">Принципы работы</button>
+      <button data-rub="import">Импортозамещение</button>
+      <button data-rub="industry">Отраслевое</button>
+    </div>
+
+    <a href="blog-nitrogen.html" class="feat" data-rub="principles">
+      <div class="feat-txt">
+        <div class="feat-meta"><span>Принципы работы</span><span class="dot">·</span><span style="color:rgba(255,255,255,0.6); text-transform:none; letter-spacing:0;">6 минут чтения</span></div>
+        <h2>Принцип работы азотной установки</h2>
+        <p>Как устроены мембранные и адсорбционные (PSA) генераторы азота, где применяются в нефтегазе и как выбрать установку под задачу: чистота, производительность, давление.</p>
+        <span class="feat-link">Читать статью →</span>
+      </div>
+      <div class="feat-img"><img src="img/cat-nitrogen.jpg" alt="Азотная установка" loading="lazy" decoding="async"></div>
+    </a>
+
+    <div class="art-grid" id="artGrid">
+      <a href="blog-api610.html" class="art-card" data-rub="guides">
+        <div class="art-photo"><img src="img/cat-pump.jpg" alt="Насосное оборудование" loading="lazy" decoding="async"></div>
+        <div class="art-body">
+          <div class="art-meta"><span>Гайды</span><span class="dot">·</span><span class="time">5 минут</span></div>
+          <h3>API 610: что значит и как подобрать насос</h3>
+          <p>Разбираем стандарт, типы исполнений OH, BB и VS и параметры, по которым подбирают центробежные насосы для нефтепереработки.</p>
+          <span class="art-link">Читать →</span>
+        </div>
+      </a>
+      <a href="blog-filters.html" class="art-card" data-rub="industry">
+        <div class="art-photo"><img src="img/cat-filter.jpg" alt="Фильтрационное оборудование" loading="lazy" decoding="async"></div>
+        <div class="art-body">
+          <div class="art-meta"><span>Отраслевое</span><span class="dot">·</span><span class="time">4 минуты</span></div>
+          <h3>Фильтры-сепараторы: что важно при подборе</h3>
+          <p>Тонкость фильтрации, рабочее давление, взаимозаменяемость элементов Hydac, Facet и Parker в действующих системах.</p>
+          <span class="art-link">Читать →</span>
+        </div>
+      </a>
+      <a href="blog-heatex.html" class="art-card" data-rub="guides">
+        <div class="art-photo"><img src="img/cat-heatex.jpg" alt="Теплообменное оборудование" loading="lazy" decoding="async"></div>
+        <div class="art-body">
+          <div class="art-meta"><span>Гайды</span><span class="dot">·</span><span class="time">4 минуты</span></div>
+          <h3>Пластинчатый или кожухотрубный теплообменник</h3>
+          <p>Чем отличаются конструкции, когда что применяют и какие данные нужны для пересчёта тепловой задачи под аналог.</p>
+          <span class="art-link">Читать →</span>
+        </div>
+      </a>
+    </div>
+
+    <div class="blog-empty" id="blogEmpty" style="display:none; padding:44px 2px; border-top:1px solid var(--line);">
+      <p style="font-size:17px; color:var(--ink-60); max-width:56ch;">В этой рубрике материалы ещё готовятся — темы перечислены ниже. Нужен ответ раньше? <a href="request.html" style="color:var(--teal); font-weight:600;">Пришлите вопрос инженеру →</a></p>
+    </div>
+
+    <div class="soon-block">
+      <div class="soon-head">
+        <h2>Скоро в базе знаний</h2>
+        <span>Материалы готовятся к публикации</span>
+      </div>
+      <div class="soon-list">
+        <div class="soon-row"><span class="rub">Импортозамещение</span><span class="ttl">Оригинал или аналог: как выбрать без потери качества</span></div>
+        <div class="soon-row"><span class="rub">Гайды</span><span class="ttl">Как читать каталожный номер Caterpillar</span></div>
+        <div class="soon-row"><span class="rub">Отраслевое</span><span class="ttl">Опросный лист на насос: как заполнить без ошибок</span></div>
+        <div class="soon-row"><span class="rub">Принципы работы</span><span class="ttl">Торцевые уплотнения по API 682: схемы и выбор</span></div>
+        <div class="soon-row"><span class="rub">Импортозамещение</span><span class="ttl">Сертификация ТР ТС при импорте оборудования</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="final-cta" id="contacts">
+  <div class="final-in">
+    <div>
+      <h2>Не нашли ответ в статьях?</h2>
+      <p class="final-sub">Пришлите вопрос или задачу — инженер разберёт и предложит решение.</p>
+    </div>
+    <form class="tz-form" data-tz>
+      <input type="text" required placeholder="Как к вам обращаться" aria-label="Имя">
+      <input type="text" required placeholder="Телефон или e-mail" aria-label="Телефон или e-mail">
+      <label class="tz-upload"><input type="file" hidden multiple>⇪ Прикрепить ТЗ или спецификацию (PDF, DOC, XLS до 10 МБ)</label>
+      <button type="submit" class="btn btn-copper">Отправить запрос</button>
+      <p class="tz-fine">Нажимая кнопку, вы соглашаетесь на обработку данных. Ответ инженера — в течение 24 часов в рабочие дни.</p>
+    </form>
+  </div>
+</section>
+<footer class="footer">
+  <div class="footer-in">
+    <div class="footer-grid">
+      <div>
+        <a href="index.html" class="logo"><span class="logo-plate"><img src="img/logo.png" alt="НГО" class="logo-img"></span></a>
+        <p class="footer-about">Поставляем промышленное оборудование, запасные части и комплектующие. Подбор ведут инженеры. Санкт-Петербург.</p>
+      </div>
+      <div>
+        <div class="footer-h">Оборудование</div>
+        <a href="pumps.html">Насосы</a>
+        <a href="filters.html">Фильтры и теплообменники</a>
+        <a href="caterpillar.html">Двигатели и ЗИП</a>
+        <a href="brands.html">Бренды</a>
+        <a href="catalog.html">Все категории →</a>
+      </div>
+      <div>
+        <div class="footer-h">Компания</div>
+        <a href="blog.html">Блог / База знаний</a>
+        <a href="about.html">О компании</a>
+        <a href="projects.html">Проекты</a>
+        <a href="services.html">Услуги</a>
+      </div>
+      <div>
+        <div class="footer-h">Контакты</div>
+        <a href="tel:+78127773691">+7 (812) 777-36-91</a>
+        <a href="mailto:info@ngo.spb.ru">info@ngo.spb.ru</a>
+        <a href="contacts.html">Санкт-Петербург</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 ООО «НГО». Поставки промышленного оборудования и ЗИП.</span>
+      <span>Санкт-Петербург · работаем по всей России</span>
+    </div>
+  </div>
+</footer>
+<script src="assets/app.js"></script>
+
+<script>
+var RUB_NAMES = { guides: 'Гайды', principles: 'Принципы работы', import: 'Импортозамещение', industry: 'Отраслевое' };
+document.querySelectorAll('.blog-filters button').forEach(function (b) {
+  b.addEventListener('click', function () {
+    var r = b.dataset.rub;
+    document.querySelectorAll('.blog-filters button').forEach(function (x) { x.classList.toggle('active', x === b); });
+    var shown = 0;
+    document.querySelectorAll('.feat, .art-card').forEach(function (card) {
+      var ok = (r === 'all' || card.dataset.rub === r);
+      card.style.display = ok ? '' : 'none';
+      if (ok) shown++;
+    });
+    document.getElementById('blogEmpty').style.display = shown ? 'none' : 'block';
+    // список «скоро» — тоже по рубрике
+    var soonShown = 0;
+    document.querySelectorAll('.soon-row').forEach(function (row) {
+      var name = row.querySelector('.rub').textContent.trim().toLowerCase();
+      var ok = (r === 'all' || name === (RUB_NAMES[r] || '').toLowerCase());
+      row.style.display = ok ? '' : 'none';
+      if (ok) soonShown++;
+    });
+    document.querySelector('.soon-block').style.display = soonShown ? '' : 'none';
+  });
+});
+</script>
+</body>
+</html>

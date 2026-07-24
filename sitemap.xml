@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Карта сайта прототипа. URL — будущая структура ЧПУ на прод-домене ngo.group -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://ngo.group/</loc></url>
+  <url><loc>https://ngo.group/catalog/</loc></url>
+  <url><loc>https://ngo.group/pumps/</loc></url>
+  <url><loc>https://ngo.group/filters/</loc></url>
+  <url><loc>https://ngo.group/brands/</loc></url>
+  <url><loc>https://ngo.group/caterpillar/</loc></url>
+  <url><loc>https://ngo.group/cat-3406e/</loc></url>
+  <url><loc>https://ngo.group/services/</loc></url>
+  <url><loc>https://ngo.group/import/</loc></url>
+  <url><loc>https://ngo.group/analogs/</loc></url>
+  <url><loc>https://ngo.group/manufacturing/</loc></url>
+  <url><loc>https://ngo.group/engineering/</loc></url>
+  <url><loc>https://ngo.group/installation/</loc></url>
+  <url><loc>https://ngo.group/projects/</loc></url>
+  <url><loc>https://ngo.group/project-drilling/</loc></url>
+  <url><loc>https://ngo.group/blog/</loc></url>
+  <url><loc>https://ngo.group/blog-nitrogen/</loc></url>
+  <url><loc>https://ngo.group/blog-api610/</loc></url>
+  <url><loc>https://ngo.group/request/</loc></url>
+  <url><loc>https://ngo.group/about/</loc></url>
+  <url><loc>https://ngo.group/contacts/</loc></url>
+  <url><loc>https://ngo.group/pump-grundfos-cr64/</loc></url>
+  <url><loc>https://ngo.group/pump-cns-180-1900/</loc></url>
+  <url><loc>https://ngo.group/filter-parker-ps604/</loc></url>
+  <url><loc>https://ngo.group/heatex-alfa-m15/</loc></url>
+  <url><loc>https://ngo.group/cat-3512/</loc></url>
+  <url><loc>https://ngo.group/cat-c27/</loc></url>
+  <url><loc>https://ngo.group/blog-filters/</loc></url>
+  <url><loc>https://ngo.group/blog-heatex/</loc></url>
+</urlset>
