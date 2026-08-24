@@ -775,3 +775,37 @@ a.cat-row.pending:hover { background: transparent; color: var(--graphite); }
   .site-logo img{height:40px}
 }
 @media(max-width:520px){ .site-logo .txt{display:none} }
+
+/* ---------- тёмная верхняя зона внутренних страниц (язык главной) ---------- */
+.page-top{background:var(--teal-deep);color:#fff;border-bottom:1px solid rgba(255,255,255,.08)}
+.page-top .crumbs{color:rgba(255,255,255,.5);padding-top:22px}
+.page-top .crumbs a{color:rgba(255,255,255,.6)}
+.page-top .crumbs a:hover{color:#fff}
+.page-top .crumbs span{color:rgba(255,255,255,.8)}
+.page-top .small-label{color:rgba(255,255,255,.55)}
+.page-top .small-label b{color:var(--copper-bright)}
+.page-top .cat-head{padding:18px 0 42px}
+.page-top .cat-head h1{color:#fff}
+.page-top .cat-head .lead{color:rgba(255,255,255,.75)}
+.page-top .btn-ghost{border-color:rgba(255,255,255,.4);color:#fff;background:transparent}
+.page-top .btn-ghost:hover{border-color:#fff;background:rgba(255,255,255,.08)}
+.page-top .btn-solid{background:var(--copper-bright);color:#0B1B2B}
+.page-top .btn-solid:hover{background:#f08b31}
+.page-top .chip,.page-top .tag{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.2);color:#fff}
+
+/* элементы, попадающие в тёмную верхнюю зону */
+.page-top .tag-row a{border-color:rgba(255,255,255,.28);color:rgba(255,255,255,.85)}
+.page-top .tag-row a:hover{border-color:#fff;color:#fff;background:rgba(255,255,255,.08)}
+.page-top .pending-tag{background:rgba(255,255,255,.14);color:rgba(255,255,255,.9)}
+.page-top .cat-actions{margin-top:26px}
+.page-top p,.page-top li{color:rgba(255,255,255,.75)}
+.page-top a:not(.btn):not(.crumbs a){color:inherit}
+.page-top .head-link{color:var(--copper-bright)}
+/* фото-баннер сразу под тёмной зоной прижимается к ней */
+.page-top + .page-hero-img{margin-top:22px}
+/* редакционные страницы: тёмная полоса только с крошками */
+.article-top{background:var(--teal-deep);color:#fff;border-bottom:1px solid rgba(255,255,255,.08)}
+.article-top .crumbs{color:rgba(255,255,255,.5);padding:22px 0}
+.article-top .crumbs a{color:rgba(255,255,255,.6)}
+.article-top .crumbs a:hover{color:#fff}
+.article-top .crumbs span{color:rgba(255,255,255,.8)}
