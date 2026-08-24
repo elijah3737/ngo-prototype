@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Установки электродиализа: принцип работы и подбор — НГО Групп</title>
+<meta name="description" content="Как работает электродиализ: мембранное обессоливание воды под действием электрического поля, области применения в нефтегазе, состав установки и данные для подбора.">
+<link rel="canonical" href="https://ngo.group/blog-electrodialysis/">
+<meta property="og:title" content="Установки электродиализа: принцип работы и подбор — НГО Групп">
+<meta property="og:description" content="Как работает электродиализ: мембранное обессоливание воды под действием электрического поля, области применения в нефтегазе, состав установки и данные для подбора.">
+<meta property="og:type" content="article">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
+<link rel="stylesheet" href="assets/style.css?v=20260824h">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Установки электродиализа", "description": "Как работает электродиализ: мембранное обессоливание воды под действием электрического поля, области применения в нефтегазе, состав установки и данные для подбора.", "author": {"@type": "Organization", "name": "НГО Групп"}, "publisher": {"@type": "Organization", "name": "НГО Групп"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Чем электродиализ отличается от обратного осмоса?", "acceptedAnswer": {"@type": "Answer", "text": "В электродиализе ионы переносятся через мембраны под действием электрического поля, а вода остаётся на месте. В обратном осмосе под давлением продавливается сама вода. Поэтому при умеренной минерализации электродиализ обычно экономичнее по энергии и даёт более высокий выход очищенной воды."}}, {"@type": "Question", "name": "Какую воду можно обессоливать электродиализом?", "acceptedAnswer": {"@type": "Answer", "text": "Метод рассчитан на слабосолёные и умеренно минерализованные воды: подземные, пластовые, технологические и оборотные. Для подбора нужен анализ по солесодержанию, ионному составу, жёсткости и содержанию железа, нефтепродуктов и взвеси."}}, {"@type": "Question", "name": "Можно ли увеличить производительность после запуска?", "acceptedAnswer": {"@type": "Answer", "text": "Да, установка модульная: производительность наращивается добавлением мембранных пакетов и технологических модулей без замены всей системы."}}, {"@type": "Question", "name": "Поставляете ли вы установки электродиализа?", "acceptedAnswer": {"@type": "Answer", "text": "Да, подбираем и поставляем установки под состав воды и требуемую производительность, включая обвязку, КИП, систему промывки и шкаф управления."}}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Главная", "item": "https://ngo.group/"}, {"@type": "ListItem", "position": 2, "name": "База знаний", "item": "https://ngo.group/blog/"}, {"@type": "ListItem", "position": 3, "name": "Установки электродиализа", "item": "https://ngo.group/blog-electrodialysis/"}]}</script>
+</head>
+<body>
+<div class="read-progress" id="readProgress"></div>
+<header class="header">
+  <div class="header-in">
+    <a href="index.html" class="logo"><span class="logo-name"><span class="lg-top">Компания</span><span class="lg-main">«НГО Групп»</span></span><img src="img/logo-white.png" alt="НГО Групп" class="logo-img"></a>
+    <nav class="nav" aria-label="Основная навигация">
+      <a href="catalog.html">Оборудование</a>
+      <a href="services.html">Услуги</a>
+      <a href="blog.html">База знаний</a>
+      <a href="about.html">О компании</a>
+      <a href="contacts.html">Контакты</a>
+    </nav>
+    <div class="header-cta">
+      <button class="search-btn" id="searchBtn" aria-label="Поиск по сайту"><i class="ph ph-magnifying-glass" aria-hidden="true"></i><span>Поиск</span><kbd>/</kbd></button>
+      <a href="tel:+78127773691" class="header-phone">+7 (812) 777-36-91</a>
+      <a href="mailto:info@ngo.group" class="header-mail">info@ngo.group</a>
+      <button class="burger" id="burger" aria-label="Меню">☰</button>
+    </div>
+  </div>
+</header>
+<div class="search-backdrop" id="searchBackdrop"></div>
+<div class="search-panel" id="searchPanel" role="dialog" aria-label="Поиск по каталогу">
+  <div class="search-in">
+    <div class="search-row2">
+      <i class="ph ph-magnifying-glass" aria-hidden="true"></i>
+      <input id="searchInput" type="text" placeholder="Артикул, бренд или категория…" autocomplete="off">
+      <button class="search-close" id="searchClose">ESC ✕</button>
+    </div>
+    <div class="search-hint">Например: <button type="button" data-q="3406E">3406E</button> · <button type="button" data-q="Hydac">Hydac</button> · <button type="button" data-q="теплообменник">теплообменник</button> · <button type="button" data-q="уплотнения">уплотнения</button></div>
+    <div class="search-res" id="searchRes"></div>
+  </div>
+</div>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="catalog.html">Оборудование</a>
+  <a href="services.html">Услуги</a>
+  <a href="blog.html">База знаний</a>
+  <a href="about.html">О компании</a>
+  <a href="contacts.html">Контакты</a>
+  <a href="tel:+78127773691">+7 (812) 777-36-91</a>
+  <a href="mailto:info@ngo.group">info@ngo.group</a>
+</div>
+
+
+
+
+<div class="container">
+<nav class="crumbs"><a href="index.html">Главная</a> / <a href="blog.html">База знаний</a> / <span>Установки электродиализа</span></nav>
+<div class="article-wrap">
+  <div class="article-grid">
+    <article class="article-body">
+      <h1>Установки электродиализа</h1>
+      <div class="art-head-meta">
+        <span class="rub">Принципы работы</span><span class="sep">·</span>
+        <span>5 минут чтения</span><span class="sep">·</span>
+        <span>обновлено 24.08.2026</span>
+      </div>
+      <p class="lead">Мембранные решения для очистки, обессоливания и подготовки промышленных вод. Электродиализ удаляет растворённые соли и ионы под действием электрического поля: позволяет получать воду требуемого качества, концентрировать солевые растворы и сокращать объём стоков, направляемых на утилизацию.</p>
+
+      <div class="tldr">
+        <h2>Коротко</h2>
+        <ul><li>Электродиализ разделяет ионы через чередующиеся катионо- и анионообменные мембраны под постоянным током.</li><li>Энергия расходуется на перенос ионов, а не на перемещение всего объёма воды — отсюда экономичность метода.</li><li>Степень обессоливания регулируется силой тока, напряжением, расходом и числом мембранных пакетов.</li><li>Для расчёта нужен анализ исходной воды и требования к качеству очищенного потока.</li></ul>
+      </div>
+
+      <div class="def-block"><p><span class="def-term">Электродиализ</span> — мембранный процесс, при котором растворённые соли и ионы удаляются из воды под действием электрического поля. В одних каналах установки формируется очищенный поток, в других — концентрат с повышенным содержанием солей.</p></div>
+
+      <h2 id="s1">Где применяются установки электродиализа</h2>
+      <p>В нефтегазовой, химической и энергетической промышленности электродиализ используют для подготовки технической и оборотной воды, очистки промышленных стоков, деминерализации слабосолёных растворов и извлечения ценных компонентов. Технология особенно эффективна там, где требуется управляемое удаление ионов при умеренной минерализации исходной воды.</p><ul class="bullet-list" style="margin-top:14px;">
+        <li>обессоливание подземных, пластовых и технологических вод;</li>
+        <li>подготовка воды для котельных, теплообменного и технологического оборудования;</li>
+        <li>очистка и повторное использование производственных стоков;</li>
+        <li>снижение солесодержания в оборотных системах водоснабжения;</li>
+        <li>концентрирование солевых потоков перед переработкой или утилизацией.</li>
+      </ul>
+
+      <h2 id="s2">Как работает электродиализ</h2>
+      <p>Внутри установки чередуются катионообменные и анионообменные мембраны. Под действием постоянного электрического поля положительно и отрицательно заряженные ионы перемещаются через соответствующие мембраны. В одних каналах формируется очищенный поток, в других — концентрат с повышенным содержанием солей.</p><p>Степень обессоливания регулируется изменением силы тока, напряжения, расхода и числа мембранных пакетов — установка подстраивается под текущий режим работы предприятия.</p>
+
+      <h2 id="s3">Основные преимущества</h2>
+      <div class="table-scroll"><table class="spec-table">
+        <tr><th>Экономичность</th><td>энергия расходуется преимущественно на перенос ионов, а не на перемещение всего объёма воды</td></tr>
+        <tr><th>Высокий выход воды</th><td>потери воды обычно ниже, чем в ряде традиционных мембранных схем</td></tr>
+        <tr><th>Гибкое управление</th><td>степень обессоливания регулируется под текущий режим работы</td></tr>
+        <tr><th>Модульность</th><td>производительность увеличивается добавлением мембранных пакетов и модулей</td></tr>
+        <tr><th>Повторное использование</th><td>очищенный поток может возвращаться в технологический цикл предприятия</td></tr>
+      </table></div>
+
+      <h2 id="s4">Состав установки</h2>
+      <p>Типовая система включает блок предварительной фильтрации, насосное оборудование, электродиализный аппарат с мембранными пакетами, источник постоянного тока, трубопроводную обвязку, контрольно-измерительные приборы, систему промывки и шкаф автоматического управления.</p><p>При необходимости добавляются дозирование реагентов, коррекция pH, резервуары и дистанционный мониторинг.</p>
+
+      <h2 id="s5">Что необходимо для подбора</h2>
+      <ul class="check-list" style="margin:16px 0 20px;">
+        <li>общее солесодержание и ионный состав исходной воды</li>
+        <li>жёсткость, содержание железа, нефтепродуктов и взвешенных веществ</li>
+        <li>температура и pH исходной воды</li>
+        <li>требуемое качество очищенного потока</li>
+        <li>производительность и режим эксплуатации</li>
+        </ul>
+      <div class="callout"><p><strong>Нужна установка электродиализа?</strong> Подберём оборудование под состав воды, требуемую производительность и условия эксплуатации. Для расчёта направьте анализ исходной воды и требования к качеству очищенного потока. <a href="#contacts" style="color:var(--teal); font-weight:600;">Отправить запрос →</a></p></div>
+
+      <div class="art-faq">
+        <h2 style="font-size:24px; margin:0 0 6px;">Частые вопросы</h2>
+        <details><summary>Чем электродиализ отличается от обратного осмоса?</summary><div class="faq-a">В электродиализе ионы переносятся через мембраны под действием электрического поля, а вода остаётся на месте. В обратном осмосе под давлением продавливается сама вода. Поэтому при умеренной минерализации электродиализ обычно экономичнее по энергии и даёт более высокий выход очищенной воды.</div></details><details><summary>Какую воду можно обессоливать электродиализом?</summary><div class="faq-a">Метод рассчитан на слабосолёные и умеренно минерализованные воды: подземные, пластовые, технологические и оборотные. Для подбора нужен анализ по солесодержанию, ионному составу, жёсткости и содержанию железа, нефтепродуктов и взвеси.</div></details><details><summary>Можно ли увеличить производительность после запуска?</summary><div class="faq-a">Да, установка модульная: производительность наращивается добавлением мембранных пакетов и технологических модулей без замены всей системы.</div></details><details><summary>Поставляете ли вы установки электродиализа?</summary><div class="faq-a">Да, подбираем и поставляем установки под состав воды и требуемую производительность, включая обвязку, КИП, систему промывки и шкаф управления.</div></details>
+      </div>
+
+      <div class="art-author">
+        <div class="ico"><i class="ph ph-gear-six" aria-hidden="true"></i></div>
+        <div>
+          <div class="who">Материал подготовлен инженерами компании «НГО Групп»</div>
+          <div class="what">Отдел технических поставок: подбор оборудования и ЗИП по параметрам, аналоги, комплектация. Есть вопрос по вашей задаче — пришлите параметры, возьмём запрос в работу в рабочие дни.</div>
+        </div>
+      </div>
+
+      <div class="read-next"><div class="rn-title">Читайте также</div><div class="rn-grid"><a href="blog-liquefiers.html" class="rn-card">
+        <img src="img/cat/liquefier.jpg" alt="" loading="lazy" decoding="async">
+        <div><div class="rn-rub">Принципы работы</div><h3>Ожижители газов: криогенные установки</h3></div>
+      </a><a href="blog-refrigeration.html" class="rn-card">
+        <img src="img/cat/refrigeration.jpg" alt="" loading="lazy" decoding="async">
+        <div><div class="rn-rub">Отраслевое</div><h3>Холодильные блоки для нефтегазовой отрасли</h3></div>
+      </a></div></div>
+    </article>
+    <aside class="toc">
+      <span class="small-label" style="display:block; margin-bottom:12px;">Содержание</span>
+      <a href="#s1">Где применяются</a><a href="#s2">Как работает электродиализ</a><a href="#s3">Основные преимущества</a><a href="#s4">Состав установки</a><a href="#s5">Что необходимо для подбора</a>
+    </aside>
+  </div>
+</div>
+</div>
+
+<section class="final-cta" id="contacts">
+  <div class="final-in">
+    <div>
+      <h2>Нужна установка электродиализа?</h2>
+      <p class="final-sub">Пришлите анализ исходной воды и требования к качеству очищенного потока — подберём установку и подготовим предложение.</p>
+    </div>
+    <form class="tz-form" data-tz>
+      <input type="text" required placeholder="Как к вам обращаться" aria-label="Имя">
+      <input type="text" required placeholder="Телефон или e-mail" aria-label="Телефон или e-mail">
+      <label class="tz-upload"><input type="file" hidden multiple>⇪ Прикрепить ТЗ или опросный лист (PDF, DOC, XLS до 10 МБ)</label>
+      <button type="submit" class="btn btn-copper">Отправить запрос</button>
+      <p class="tz-fine">Нажимая кнопку, вы соглашаетесь на обработку данных. Запрос подтверждаем и берём в работу в рабочие дни.</p>
+    </form>
+  </div>
+</section>
+<footer class="footer">
+  <div class="footer-in">
+    <div class="footer-grid">
+      <div>
+        <a href="index.html" class="logo"><img src="img/logo-white.png" alt="НГО" class="logo-img"></a>
+        <p class="footer-about">Поставляем промышленное оборудование, запасные части и комплектующие. Подбор ведут инженеры. г. Санкт-Петербург.</p>
+      </div>
+      <div>
+        <div class="footer-h">Оборудование</div>
+        <a href="pumps.html">Насосы</a>
+        <a href="filters.html">Фильтры и сепараторы</a>
+        <a href="catalog.html#heatex">Теплообменники и АВО</a>
+        <a href="caterpillar.html">Двигатели и ЗИП</a>
+        <a href="brands.html">Бренды</a>
+        <a href="catalog.html">Все категории →</a>
+      </div>
+      <div>
+        <div class="footer-h">Компания</div>
+        <a href="blog.html">База знаний</a>
+        <a href="about.html">О компании</a>
+        <a href="projects.html">Наш опыт</a>
+        <a href="services.html">Услуги</a>
+      </div>
+      <div>
+        <div class="footer-h">Контакты</div>
+        <a href="tel:+78127773691">+7 (812) 777-36-91</a>
+        <a href="mailto:info@ngo.group">info@ngo.group</a>
+        <a href="contacts.html">г. Санкт-Петербург</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 ООО «НГО». Поставки промышленного оборудования и ЗИП.</span>
+      <span>г. Санкт-Петербург · работаем по всей России</span>
+    </div>
+  </div>
+</footer>
+<script src="assets/app.js?v=20260824"></script>
+<script>
+/* прогресс чтения */
+var pb = document.getElementById('readProgress');
+var art = document.querySelector('.article-body');
+function updProgress() {
+  if (!art || !pb) return;
+  var r = art.getBoundingClientRect();
+  var total = r.height - window.innerHeight;
+  var passed = Math.min(Math.max(-r.top, 0), Math.max(total, 1));
+  pb.style.width = (total > 0 ? (passed / total) * 100 : 0) + '%';
+}
+/* активный пункт оглавления */
+var tocLinks = [].slice.call(document.querySelectorAll('.toc a'));
+var heads = tocLinks.map(function (a) { return document.getElementById(a.getAttribute('href').slice(1)); });
+function updToc() {
+  var idx = 0;
+  heads.forEach(function (h, i) { if (h && h.getBoundingClientRect().top < 160) idx = i; });
+  tocLinks.forEach(function (a, i) { a.classList.toggle('active', i === idx); });
+}
+var ticking = false;
+function onScroll() {
+  if (ticking) return;
+  ticking = true;
+  requestAnimationFrame(function () { updProgress(); updToc(); ticking = false; });
+}
+window.addEventListener('scroll', onScroll, { passive: true });
+document.addEventListener('scroll', onScroll, { passive: true });
+updProgress(); updToc();
+
+/* подсветка оглавления через IntersectionObserver (независимо от scroll-событий) */
+if ('IntersectionObserver' in window && heads.filter(Boolean).length) {
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) {
+      if (!e.isIntersecting) return;
+      var i = heads.indexOf(e.target);
+      if (i > -1) tocLinks.forEach(function (a, j) { a.classList.toggle('active', j === i); });
+    });
+  }, { rootMargin: '-140px 0px -70% 0px', threshold: 0 });
+  heads.forEach(function (h) { if (h) io.observe(h); });
+}
+</script>
+</body>
+</html>

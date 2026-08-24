@@ -18,7 +18,6 @@
   <url><loc>https://ngo.group/project-drilling/</loc></url>
   <url><loc>https://ngo.group/blog/</loc></url>
   <url><loc>https://ngo.group/blog-nitrogen/</loc></url>
-  <url><loc>https://ngo.group/blog-api610/</loc></url>
   <url><loc>https://ngo.group/request/</loc></url>
   <url><loc>https://ngo.group/about/</loc></url>
   <url><loc>https://ngo.group/contacts/</loc></url>
@@ -30,4 +29,46 @@
   <url><loc>https://ngo.group/cat-c27/</loc></url>
   <url><loc>https://ngo.group/blog-filters/</loc></url>
   <url><loc>https://ngo.group/blog-heatex/</loc></url>
+  <url>
+    <loc>https://ngo.group/blog-electrodialysis/</loc>
+    <lastmod>2026-08-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ngo.group/blog-liquefiers/</loc>
+    <lastmod>2026-08-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ngo.group/blog-refrigeration/</loc>
+    <lastmod>2026-08-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ngo.group/blog-texas-tower/</loc>
+    <lastmod>2026-08-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ngo.group/opyt-filter-block/</loc>
+    <lastmod>2026-08-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ngo.group/opyt-heatex-plate/</loc>
+    <lastmod>2026-08-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ngo.group/opyt-heatex-welded/</loc>
+    <lastmod>2026-08-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>

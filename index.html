@@ -3,148 +3,238 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ООО «НГО» — поставки промышленного оборудования и ЗИП для нефтегаза</title>
-<meta name="description" content="Поставка промышленного оборудования и ЗИП для нефтегаза: насосы, компрессоры, двигатели, фильтры, теплообменники. Оборудование мировых производителей, подбор аналогов, изготовление под заказ.">
+<title>НГО Групп — поставки промышленного оборудования и ЗИП для нефтегаза</title>
+<meta name="description" content="Поставка промышленного оборудования и ЗИП для нефтегаза: насосы, компрессоры, газовые двигатели, фильтры, теплообменники, воздухоразделительные и холодильные установки. Оригиналы, аналоги производства Китая и Индии, изготовление под заказ.">
 <link rel="canonical" href="https://ngo.group/">
-<meta property="og:title" content="ООО «НГО» — поставки промышленного оборудования и ЗИП">
-<meta property="og:description" content="Насосы, компрессоры, двигатели, фильтры, теплообменники. ведущих мировых брендов, поставки по всей России.">
+<meta property="og:title" content="НГО Групп — поставки промышленного оборудования и ЗИП">
+<meta property="og:description" content="Насосы, компрессоры, двигатели, фильтры, теплообменники ведущих мировых брендов, поставки по всей России.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
-<link rel="stylesheet" href="assets/style.css">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"ООО «НГО» (NGO Group)","url":"https://ngo.group","description":"Комплексные поставки промышленного оборудования и ЗИП для нефтегазовой отрасли.","address":{"@type":"PostalAddress","addressLocality":"Санкт-Петербург","addressCountry":"RU"},"telephone":"+7 (812) 777-36-91","email":"info@ngo.spb.ru","foundingDate":"2012"}</script>
+<link rel="stylesheet" href="assets/style.css?v=20260824c">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"НГО Групп (ООО «НГО»)","url":"https://ngo.group","description":"Комплексные поставки промышленного оборудования и ЗИП для нефтегазовой отрасли.","address":{"@type":"PostalAddress","addressLocality":"Санкт-Петербург","addressCountry":"RU"},"telephone":"+7 (812) 777-36-91","email":"info@ngo.group","foundingDate":"2012"}</script>
 <style>
-/* ---------- главная v6: тёмный стиль первой версии, компактно ---------- */
-.hero-v6 { position: relative; background: var(--teal-deep); color: #fff; overflow: hidden; }
-.hero-bg { position: absolute; inset: 0; background: url('img/case3.webp') center/cover no-repeat; opacity: 0.35; }
-.hero-bg::after { content: ''; position: absolute; inset: 0; background: linear-gradient(96deg, var(--teal-deep) 32%, rgba(10,28,48,0.6) 70%, rgba(10,28,48,0.3)); }
-.hero-in { position: relative; max-width: var(--maxw); margin: 0 auto; padding: 44px 32px 46px; }
-.hero-in h1 { font-size: clamp(30px, 3.6vw, 46px); font-weight: 700; line-height: 1.14; letter-spacing: -0.015em; max-width: 24ch; }
-.hero-sub { margin-top: 14px; font-size: 16.5px; line-height: 1.55; color: rgba(255,255,255,0.82); max-width: 56ch; }
-.search-wrap { position: relative; margin-top: 22px; max-width: 780px; }
-.search-row { display: flex; gap: 10px; }
-.search-box { flex: 1; display: flex; background: #fff; border-radius: 3px; position: relative; }
-.search-box input { flex: 1; border: none; padding: 14px 16px; font-size: 15.5px; font-family: var(--font); border-radius: 3px 0 0 3px; color: var(--graphite); min-width: 0; }
-.search-box input:focus { outline: none; }
-.search-go { background: var(--teal-soft); color: #fff; border: none; padding: 0 24px; font-size: 15px; font-weight: 600; border-radius: 0 3px 3px 0; cursor: pointer; }
-.search-go:hover { background: var(--teal); }
-.search-results { display: none; position: absolute; top: calc(100% + 6px); left: 0; right: 0; z-index: 30; background: #fff; border-radius: 3px; border: 1px solid var(--line); box-shadow: 0 12px 32px rgba(10,28,48,0.25); overflow: hidden; }
-.search-results.open { display: block; }
-.sr-item { display: flex; align-items: baseline; gap: 12px; width: 100%; text-align: left; padding: 11px 16px; border: none; background: none; border-bottom: 1px solid var(--mineral-2); font-size: 14.5px; color: var(--graphite); cursor: pointer; font-family: var(--font); }
-.sr-item:last-child { border-bottom: none; }
-.sr-item:hover { background: var(--mineral); }
-.sr-code { font-family: var(--mono); font-size: 13px; font-weight: 600; color: var(--copper); flex-shrink: 0; min-width: 84px; }
-.sr-type { margin-left: auto; font-size: 12px; color: var(--ink-60); flex-shrink: 0; }
-.sr-empty { padding: 13px 16px; font-size: 14px; color: var(--ink-60); }
-.sr-empty a { color: var(--teal); font-weight: 600; }
-.hero-tags { margin-top: 12px; display: flex; flex-wrap: wrap; gap: 7px; align-items: center; }
-.hero-tags .lbl { font-family: var(--mono); font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.75); margin-right: 4px; }
-.htag { font-family: var(--mono); font-size: 12.5px; padding: 5px 11px; border-radius: 3px; background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); color: #fff; }
-.htag:hover { background: rgba(255,255,255,0.2); }
-.trust { background: var(--teal); border-top: 2px solid var(--copper-btn); color: #fff; }
-.trust-in { max-width: var(--maxw); margin: 0 auto; padding: 0 32px; display: grid; grid-template-columns: repeat(5, 1fr); }
-.trust-cell { padding: 16px 18px 16px 0; border-right: 1px solid rgba(255,255,255,0.1); }
-.trust-cell:last-child { border-right: none; }
-.trust-cell + .trust-cell { padding-left: 18px; }
-.trust-num { font-size: 22px; font-weight: 700; }
-.trust-num small { font-size: 13.5px; font-weight: 600; color: rgba(255,255,255,0.6); }
-.trust-lbl { font-size: 12.5px; line-height: 1.35; color: rgba(255,255,255,0.65); margin-top: 2px; }
-/* плотный каталог */
-.cat6 { padding: 48px 0; }
-.cat6-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px 36px; }
-.cat6-group h4 { font-family: var(--mono); font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-60); padding-bottom: 8px; border-bottom: 2px solid var(--teal); margin-bottom: 2px; font-weight: 600; }
-.cat6-row { display: flex; align-items: center; gap: 10px; padding: 8px 2px; border-bottom: 1px solid var(--line); color: var(--graphite); font-size: 14.5px; line-height: 1.35; }
-a.cat6-row { font-weight: 600; }
-a.cat6-row:hover { background: var(--mineral); color: var(--teal); }
-.cat6-row .brands { display: block; padding: 0; font-family: var(--mono); font-size: 11px; line-height: 1.45; color: var(--ink-60); font-weight: 400; margin-top: 2px; }
-.cat6-row > span:first-child { display: block; flex: 1; }
-.cat6-row .arr { margin-left: auto; color: var(--copper); flex-shrink: 0; }
-/* фото-карточки категорий */
-.catphoto-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; margin-bottom: 28px; }
-.catphoto { position: relative; border-radius: 3px; overflow: hidden; aspect-ratio: 4/3; display: flex; align-items: flex-end; color: #fff; }
-.catphoto img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s; }
-.catphoto:hover img { transform: scale(1.05); }
-.catphoto::after { content: ''; position: absolute; inset: 0; background: linear-gradient(10deg, rgba(10,28,48,0.85) 15%, rgba(10,28,48,0.05) 55%); }
-.catphoto span { position: relative; z-index: 2; padding: 12px 14px; font-size: 14.5px; font-weight: 600; line-height: 1.25; }
-/* услуги компактно */
-.svc6 { padding: 44px 0; background: var(--cool); }
-.svc6-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; }
-.svc6-card { background: #fff; border: 1px solid var(--line); border-radius: 3px; padding: 18px; color: var(--graphite); transition: border-color 0.15s; display: flex; flex-direction: column; gap: 6px; }
-.svc6-card:hover { border-color: var(--teal); }
-.svc6-card .n { font-family: var(--mono); font-size: 11.5px; color: var(--copper); font-weight: 600; }
-.svc6-card h3 { font-size: 15.5px; font-weight: 700; line-height: 1.25; }
-.svc6-card p { font-size: 13px; color: var(--ink-60); line-height: 1.45; }
-.kb-grid { grid-template-columns: repeat(3, 1fr); }
-@media (max-width: 1120px) { .kb-grid { grid-template-columns: repeat(2, 1fr); } }
-@media (max-width: 700px) { .kb-grid { grid-template-columns: 1fr; } }
-/* кейсы компактно */
-.cases6 { padding: 48px 0; }
-.case6-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
-.case6 { position: relative; border-radius: 3px; overflow: hidden; min-height: 230px; display: flex; flex-direction: column; justify-content: flex-end; padding: 18px; color: #fff; }
-.case6 img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
-.case6::after { content: ''; position: absolute; inset: 0; background: linear-gradient(10deg, rgba(10,28,48,0.88) 20%, rgba(10,28,48,0.1) 65%); }
-.case6 > * { position: relative; z-index: 2; }
-.case6 .meta { font-family: var(--mono); font-size: 11.5px; color: rgba(255,255,255,0.75); margin-bottom: 6px; }
-.case6 h3 { font-size: 16.5px; font-weight: 700; line-height: 1.3; }
-/* бегущая строка брендов */
-.marquee-bar { background: var(--teal-deep); padding: 18px 0; overflow: hidden; position: relative; }
-.marquee-track { display: flex; width: max-content; }
-.marquee-set { display: flex; gap: 46px; align-items: center; padding-right: 46px; }
-.marquee-set span { font-family: var(--mono); font-size: 14.5px; font-weight: 500; color: rgba(255,255,255,0.6); white-space: nowrap; }
-@media (prefers-reduced-motion: no-preference) {
-  .marquee-track { animation: mq 60s linear infinite; }
-  .marquee-bar:hover .marquee-track { animation-play-state: paused; }
+/* ================= главная v7: промышленный плакат ================= */
+:root{
+  --nv:#08172A; --nv-2:#0D2440; --nv-3:#123055; --nv-line:rgba(255,255,255,.13);
+  --cp:#E07B24; --cp-2:#C9660F;
+  --paper:#F3F6F9; --ink7:#0C1B2A; --ink7-60:#56697C;
+  --r-btn:8px; --r-card:12px; --r-field:8px;
+  --mw:1400px;
 }
-@keyframes mq { to { transform: translateX(-50%); } }
-/* RFQ */
-.rfq6 { background: var(--teal-deep); color: #fff; padding: 52px 0; }
-.rfq6-grid { display: grid; grid-template-columns: 1.2fr 1fr; gap: 44px; align-items: start; }
-.rfq6 h2 { color: #fff; }
-.rfq6 .sub { color: rgba(255,255,255,0.72); margin-top: 10px; font-size: 15.5px; max-width: 50ch; }
-.rfq6 .chips { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 16px; }
-.rfq6 .chips span { font-family: var(--mono); font-size: 12px; padding: 5px 10px; border-radius: 3px; background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.16); color: rgba(255,255,255,0.85); }
-.section-head h2 { font-size: clamp(22px, 2.6vw, 30px); font-weight: 700; }
-.section-head { margin-bottom: 24px; }
-@media (max-width: 1120px) {
-  .cat6-grid { grid-template-columns: repeat(2, 1fr); }
-  .catphoto-grid { grid-template-columns: repeat(3, 1fr); }
-  .svc6-grid { grid-template-columns: repeat(2, 1fr); }
-  .case6-grid { grid-template-columns: 1fr; }
-  .trust-in { grid-template-columns: repeat(2, 1fr); }
-  .trust-cell { border-right: none; padding-left: 0 !important; }
-  .rfq6-grid { grid-template-columns: 1fr; }
+body{background:var(--nv);color:#fff;font-family:'Onest',-apple-system,'Segoe UI',sans-serif;font-size:16px;line-height:1.55}
+.w7{max-width:var(--mw);margin:0 auto;padding:0 34px}
+
+/* шапка поверх hero */
+.h7{position:absolute;top:0;left:0;right:0;z-index:40;background:none;border:0;backdrop-filter:none}
+.h7-in{max-width:var(--mw);margin:0 auto;padding:20px 34px;display:flex;align-items:center;gap:30px;height:auto}
+.h7-brand{display:flex;align-items:center;gap:13px;flex-shrink:0}
+.h7-brand img{height:48px;width:auto;display:block}
+.h7-brand b{font-size:15px;font-weight:600;letter-spacing:-.01em;color:#fff;white-space:nowrap}
+.h7-brand small{display:block;font-family:'JetBrains Mono',ui-monospace,monospace;font-size:9.5px;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.45)}
+.h7-nav{display:flex;gap:26px;margin-left:auto;font-size:15px;font-weight:500}
+.h7-nav a{color:rgba(255,255,255,.86);transition:color .15s}
+.h7-nav a:hover{color:#fff}
+.h7-ct{display:flex;align-items:center;gap:16px}
+.h7-tel{display:inline-flex;align-items:center;padding:10px 18px;border-radius:var(--r-btn);background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.22);font-size:14px;font-weight:600;color:#fff;white-space:nowrap;backdrop-filter:blur(8px);transition:.15s}
+.h7-tel:hover{background:rgba(255,255,255,.18)}
+.h7-mail{font-family:'JetBrains Mono',ui-monospace,monospace;font-size:13px;color:rgba(255,255,255,.7);white-space:nowrap}
+.h7-mail:hover{color:#fff}
+.h7 .search-btn{border-color:rgba(255,255,255,.25);color:rgba(255,255,255,.8);background:transparent}
+.h7 .burger{border-color:rgba(255,255,255,.3);color:#fff}
+
+/* hero */
+.hero7{position:relative;min-height:min(88vh,780px);display:flex;align-items:flex-end;overflow:hidden}
+.hero7-img{position:absolute;inset:0;background:url('img/case3.webp') center/cover no-repeat;filter:grayscale(.5) contrast(1.06) brightness(.92)}
+.hero7-img::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,23,42,.86) 0%,rgba(8,23,42,.4) 32%,rgba(8,23,42,.95) 86%)}
+.hero7-in{position:relative;width:100%;max-width:var(--mw);margin:0 auto;padding:0 34px 46px}
+.hero7 h1{font-size:clamp(34px,5.6vw,76px);font-weight:800;line-height:1;letter-spacing:-.035em;max-width:16ch;text-wrap:balance;color:#fff}
+.hero7 h1 em{font-style:normal;color:var(--cp)}
+.hero7 .sub{margin-top:20px;font-size:clamp(16px,1.35vw,19px);line-height:1.45;color:rgba(255,255,255,.82);max-width:52ch}
+.sw7{position:relative;margin-top:26px;max-width:720px}
+.sw7-row{display:flex;gap:12px;flex-wrap:wrap}
+.sw7-box{flex:1;min-width:280px;display:flex;background:#fff;border-radius:var(--r-btn);position:relative}
+.sw7-box input{flex:1;min-width:0;border:0;background:none;padding:15px 18px;font:400 15.5px 'Onest',sans-serif;color:var(--ink7);border-radius:var(--r-btn) 0 0 var(--r-btn)}
+.sw7-box input:focus{outline:2px solid var(--cp);outline-offset:-2px;border-radius:var(--r-btn)}
+.sw7-go{border:0;background:var(--nv-3);color:#fff;font:600 15px 'Onest',sans-serif;padding:0 26px;border-radius:0 var(--r-btn) var(--r-btn) 0;cursor:pointer;transition:background .15s}
+.sw7-go:hover{background:#17406f}
+.btn7{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:15px 26px;border-radius:var(--r-btn);font-size:15.5px;font-weight:700;transition:.16s;white-space:nowrap}
+.btn7-fill{background:var(--cp);color:#0B1B2B}
+.btn7-fill:hover{background:#f08b31}
+.btn7-ghost{border:1px solid rgba(255,255,255,.35);color:#fff}
+.btn7-ghost:hover{border-color:#fff;background:rgba(255,255,255,.08)}
+.sw7 .search-results{border-radius:var(--r-btn);top:calc(100% + 8px)}
+.tags7{margin-top:14px;display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.tags7 .lbl{font-family:'JetBrains Mono',ui-monospace,monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.6);margin-right:4px}
+.tags7 a{font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12.5px;padding:6px 12px;border-radius:var(--r-btn);background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);color:#fff;transition:.15s}
+.tags7 a:hover{background:rgba(255,255,255,.2)}
+
+/* факты */
+.facts7{background:var(--nv-2);border-top:1px solid var(--nv-line)}
+.facts7-in{max-width:var(--mw);margin:0 auto;padding:30px 34px;display:grid;grid-template-columns:repeat(6,1fr);gap:26px}
+.facts7 .n{font-size:clamp(26px,2.6vw,40px);font-weight:700;line-height:1;letter-spacing:-.03em;color:#fff}
+.facts7 .n i{font-style:normal;font-size:.46em;color:var(--cp);margin-left:2px}
+.facts7 .l{margin-top:8px;font-size:13px;line-height:1.4;color:rgba(255,255,255,.6)}
+a.fact7:hover .n{color:var(--cp)}
+
+/* секции */
+.s7{padding:70px 0}
+.s7-white{background:#fff;color:var(--ink7)}
+.s7-paper{background:var(--paper);color:var(--ink7)}
+.s7-h{display:flex;align-items:flex-end;justify-content:space-between;gap:28px;margin-bottom:30px}
+.s7-h h2{font-size:clamp(26px,3.2vw,44px);font-weight:700;line-height:1.06;letter-spacing:-.03em;max-width:18ch;padding:0;margin:0}
+.s7-h h2::before{display:none}
+.s7-h a{font-size:15px;font-weight:600;color:var(--cp-2);white-space:nowrap;border-bottom:2px solid transparent;transition:border-color .15s}
+.s7-h a:hover{border-bottom-color:var(--cp)}
+
+/* каталог */
+.bento7{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+.tile7{position:relative;aspect-ratio:4/3;overflow:hidden;border-radius:var(--r-card);display:flex;align-items:flex-end;color:#fff}
+.tile7 img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .5s cubic-bezier(.16,1,.3,1)}
+.tile7:hover img{transform:scale(1.04)}
+.tile7::after{content:'';position:absolute;inset:0;background:linear-gradient(0deg,rgba(8,23,42,.92) 8%,rgba(8,23,42,.15) 62%)}
+.tile7>div{position:relative;z-index:2;padding:16px 17px}
+.tile7 h3{font-size:17px;font-weight:600;line-height:1.22;text-wrap:balance;color:#fff;overflow-wrap:anywhere;hyphens:auto}
+.tile7 p{margin-top:4px;font-family:'JetBrains Mono',ui-monospace,monospace;font-size:10.5px;line-height:1.4;color:rgba(255,255,255,.6);overflow-wrap:anywhere}
+.more7{margin-top:34px;padding-top:8px;display:grid;grid-template-columns:1fr 1fr;gap:0 44px}
+.more7 a{display:flex;align-items:center;gap:14px;padding:14px 0;border-bottom:1px solid rgba(12,27,42,.12);font-size:16px;font-weight:500;color:var(--ink7)}
+.more7 a:hover{color:var(--cp-2)}
+.more7 a b{margin-left:auto;font-weight:600;color:var(--cp-2)}
+
+/* услуги */
+.svc7{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+.svc7 a{background:var(--nv-2);border:1px solid var(--nv-line);border-radius:var(--r-card);padding:24px 22px 26px;display:flex;flex-direction:column;gap:9px;transition:.16s}
+.svc7 a:hover{background:var(--nv-3);transform:translateY(-2px)}
+.svc7 .n{font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px;color:var(--cp)}
+.svc7 h3{font-size:18px;font-weight:600;line-height:1.22;color:#fff}
+.svc7 p{font-size:14px;line-height:1.5;color:rgba(255,255,255,.65)}
+
+/* опыт */
+.opyt7{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.opyt7 article{background:#fff;color:var(--ink7);display:flex;flex-direction:column;overflow:hidden;border-radius:var(--r-card)}
+.opyt7 .ph{aspect-ratio:16/10;background:#fff;border-bottom:1px solid rgba(12,27,42,.1)}
+.opyt7 .ph img{width:100%;height:100%;object-fit:contain;padding:10px}
+.opyt7 .bd{padding:22px;display:flex;flex-direction:column;gap:10px;flex:1}
+.opyt7 .kpi{font-size:34px;font-weight:700;letter-spacing:-.03em;line-height:1;color:var(--cp-2)}
+.opyt7 .kpi small{font-size:14px;font-weight:500;color:var(--ink7-60);margin-left:6px}
+.opyt7 h3{font-size:18px;font-weight:600;line-height:1.28}
+.opyt7 p{font-size:14px;line-height:1.5;color:var(--ink7-60)}
+.opyt7 .lnk{margin-top:auto;padding-top:14px;font-size:15px;font-weight:600;color:var(--cp-2)}
+
+/* база знаний */
+.kb7{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.kb7 a{padding:24px 22px 26px;background:var(--nv-2);border:1px solid var(--nv-line);border-radius:var(--r-card);display:flex;flex-direction:column;gap:9px;min-height:200px;transition:.16s}
+.kb7 a:hover{background:var(--nv-3)}
+.kb7 .rub{font-family:'JetBrains Mono',ui-monospace,monospace;font-size:11.5px;color:var(--cp)}
+.kb7 h3{font-size:19px;font-weight:600;line-height:1.22;color:#fff}
+.kb7 p{font-size:14px;line-height:1.5;color:rgba(255,255,255,.65)}
+.kb7 .rd{margin-top:auto;font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px;color:rgba(255,255,255,.4)}
+
+/* бренды */
+.mq7{background:var(--nv-2);border-top:1px solid var(--nv-line);border-bottom:1px solid var(--nv-line);padding:20px 0;overflow:hidden}
+.mq7-track{display:flex;width:max-content}
+.mq7-set{display:flex;gap:44px;align-items:center;padding-right:44px}
+.mq7-set a{font-family:'JetBrains Mono',ui-monospace,monospace;font-size:14px;font-weight:500;color:rgba(255,255,255,.55);white-space:nowrap;transition:color .15s}
+.mq7-set a:hover{color:var(--cp)}
+@media (prefers-reduced-motion: no-preference){
+  .mq7-track{animation:mq7 68s linear infinite}
+  .mq7:hover .mq7-track{animation-play-state:paused}
 }
-@media (max-width: 700px) {
-  .cat6-grid, .svc6-grid { grid-template-columns: 1fr; }
-  .catphoto-grid { grid-template-columns: repeat(2, 1fr); }
-  .search-row { flex-direction: column; }
-  .search-row .btn { width: 100%; justify-content: center; }
-  .trust-in { grid-template-columns: 1fr 1fr; }
+@keyframes mq7{to{transform:translateX(-50%)}}
+
+/* CTA */
+.cta7{background:var(--cp);color:#0B1B2B;padding:70px 0}
+.cta7-in{max-width:var(--mw);margin:0 auto;padding:0 34px;display:grid;grid-template-columns:1.1fr 1fr;gap:52px;align-items:center}
+.cta7 h2{font-size:clamp(28px,3.8vw,50px);font-weight:800;line-height:1.02;letter-spacing:-.035em;max-width:14ch;color:#0B1B2B}
+.cta7 p{margin-top:16px;font-size:17px;line-height:1.5;max-width:44ch;color:rgba(11,27,43,.8)}
+.cta7 .chips{margin-top:18px;display:flex;flex-wrap:wrap;gap:8px}
+.cta7 .chips span{font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px;padding:6px 12px;border-radius:var(--r-btn);background:rgba(11,27,43,.1);color:rgba(11,27,43,.85)}
+.frm7{display:grid;gap:11px}
+.frm7 input[type=text]{border:1px solid rgba(11,27,43,.28);border-radius:var(--r-field);background:rgba(255,255,255,.78);color:#0B1B2B;padding:15px 16px;font:400 16px 'Onest',sans-serif}
+.frm7 input::placeholder{color:rgba(11,27,43,.55)}
+.frm7 input:focus{outline:2px solid #0B1B2B;outline-offset:-2px}
+.frm7 label{border:1px dashed rgba(11,27,43,.4);border-radius:var(--r-field);padding:15px 16px;font-size:14px;color:rgba(11,27,43,.78);cursor:pointer;display:block}
+.frm7 button{border:0;border-radius:var(--r-btn);background:#0B1B2B;color:#fff;font:600 16px 'Onest',sans-serif;padding:16px;cursor:pointer;transition:.15s}
+.frm7 button:hover{background:#12283f}
+.frm7 .fine{font-size:13px;line-height:1.45;color:rgba(11,27,43,.65)}
+
+/* футер */
+.f7{background:var(--nv);padding:52px 0 26px;border-top:1px solid var(--nv-line)}
+.f7-in{max-width:var(--mw);margin:0 auto;padding:0 34px;display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:34px}
+.f7 h4{font-family:'JetBrains Mono',ui-monospace,monospace;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.4);margin-bottom:14px}
+.f7 a{display:block;padding:5px 0;font-size:15px;color:rgba(255,255,255,.75)}
+.f7 a:hover{color:#fff}
+.f7-b{max-width:var(--mw);margin:30px auto 0;padding:18px 34px 0;border-top:1px solid var(--nv-line);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:13.5px;color:rgba(255,255,255,.42)}
+
+@media(max-width:1320px){ .h7-mail{display:none} }
+@media(max-width:1180px){
+  .h7-nav{display:none}
+  .facts7-in{grid-template-columns:repeat(3,1fr)}
+  .bento7{grid-template-columns:repeat(2,1fr)}
+  .svc7{grid-template-columns:repeat(2,1fr)}
+  .opyt7,.kb7{grid-template-columns:1fr}
+  .cta7-in{grid-template-columns:1fr;gap:32px}
+  .f7-in{grid-template-columns:1fr 1fr}
+  .more7{grid-template-columns:1fr}
+}
+@media(max-width:860px){
+  .s7-h{flex-direction:column;align-items:flex-start;gap:12px}
+  .s7-h a{white-space:normal}
+  .h7-tel{display:none}
+  /* на узких шапка перестаёт быть накладной: иначе заголовок заезжает под логотип */
+  .h7{position:sticky;top:0;background:var(--nv);border-bottom:1px solid var(--nv-line)}
+  .h7-in{padding-top:14px;padding-bottom:14px}
+  .hero7{min-height:auto}
+  .hero7-in{padding-top:44px;padding-bottom:44px}
+}
+@media(max-width:700px){
+  .w7,.h7-in,.hero7-in,.facts7-in,.cta7-in,.f7-in,.f7-b{padding-left:20px;padding-right:20px}
+  .facts7-in{grid-template-columns:1fr 1fr;gap:20px}
+  .bento7{grid-template-columns:repeat(2,1fr);gap:10px}
+  .h7-ct{gap:10px}
+  .svc7{grid-template-columns:1fr}
+  .hero7{min-height:min(80vh,620px)}
+  .sw7-row .btn7{width:100%}
+  .s7{padding:48px 0}
+}
+@media(max-width:520px){
+  .h7-brand span{display:none}
+  .h7-in{gap:12px}
+  .h7-brand img{height:42px}
+}
+@media(max-width:470px){
+  .bento7{grid-template-columns:1fr}
+  .tile7{aspect-ratio:16/9}
+  .facts7-in{grid-template-columns:1fr 1fr}
 }
 </style>
 </head>
 <body>
 
-<header class="header">
-  <div class="header-in">
-    <a href="index.html" class="logo"><span class="logo-plate"><img src="img/logo.png" alt="НГО" class="logo-img"></span></a>
-    <nav class="nav" aria-label="Основная навигация">
+<header class="header h7">
+  <div class="header-in h7-in">
+    <a href="index.html" class="h7-brand">
+      <img src="img/logo-white.png" alt="НГО Групп">
+      <span><b>«НГО Групп»</b><small>Санкт-Петербург</small></span>
+    </a>
+    <nav class="h7-nav" aria-label="Основная навигация">
       <a href="catalog.html">Оборудование</a>
       <a href="services.html">Услуги</a>
-      <a href="projects.html">Кейсы</a>
-      <a href="blog.html">Блог</a>
+      <a href="projects.html">Опыт</a>
+      <a href="blog.html">База знаний</a>
       <a href="about.html">О компании</a>
       <a href="contacts.html">Контакты</a>
     </nav>
-    <div class="header-cta">
+    <div class="header-cta h7-ct">
       <button class="search-btn" id="searchBtn" aria-label="Поиск по сайту"><i class="ph ph-magnifying-glass" aria-hidden="true"></i><span>Поиск</span><kbd>/</kbd></button>
-      <a href="tel:+78127773691" class="header-phone">+7 (812) 777-36-91</a>
-      <a href="#contacts" class="btn btn-copper btn-header">Обсудить задачу</a>
+      <a href="tel:+78127773691" class="h7-tel">+7 (812) 777-36-91</a>
+      <a href="mailto:info@ngo.group" class="h7-mail">info@ngo.group</a>
       <button class="burger" id="burger" aria-label="Меню">☰</button>
     </div>
   </div>
 </header>
+
 <div class="search-backdrop" id="searchBackdrop"></div>
 <div class="search-panel" id="searchPanel" role="dialog" aria-label="Поиск по каталогу">
   <div class="search-in">
@@ -161,219 +251,209 @@ a.cat6-row:hover { background: var(--mineral); color: var(--teal); }
 <div class="mobile-menu" id="mobileMenu">
   <a href="catalog.html">Оборудование</a>
   <a href="services.html">Услуги</a>
-  <a href="projects.html">Кейсы</a>
-  <a href="blog.html">Блог</a>
+  <a href="projects.html">Опыт</a>
+  <a href="blog.html">База знаний</a>
   <a href="about.html">О компании</a>
   <a href="contacts.html">Контакты</a>
   <a href="tel:+78127773691">+7 (812) 777-36-91</a>
+  <a href="mailto:info@ngo.group">info@ngo.group</a>
 </div>
 
-<!-- HERO: тёмный, компактный, с живым поиском -->
-<section class="hero-v6">
-  <div class="hero-bg" role="img" aria-label="Промышленный объект"></div>
-  <div class="hero-in">
-    <h1>Поставка промышленного оборудования и ЗИП для нефтегаза</h1>
-    <p class="hero-sub">Оборудование мировых производителей: оригиналы, аналоги по техническим характеристикам, изготовление под заказ. Подбор ведут инженеры.</p>
-    <div class="search-wrap">
-      <div class="search-row">
-        <div class="search-box">
+<!-- HERO -->
+<section class="hero7">
+  <div class="hero7-img" role="img" aria-label="Промышленный объект"></div>
+  <div class="hero7-in">
+    <h1>Оборудование, которое <em>держит режим</em> на промысле и НПЗ</h1>
+    <p class="sub">Поставка промышленного оборудования и ЗИП для нефтегаза: оригиналы, аналоги производства Китая и Индии по техническим характеристикам, изготовление под заказ.</p>
+    <div class="sw7 search-wrap">
+      <div class="sw7-row">
+        <div class="sw7-box search-box">
           <input type="search" id="liveSearch" placeholder="Артикул, бренд или тип оборудования, напр. Grundfos…" autocomplete="off" aria-label="Поиск по каталогу">
-          <button class="search-go" id="searchGo">Найти</button>
+          <button class="sw7-go" id="searchGo">Найти</button>
           <div class="search-results" id="searchResults"></div>
         </div>
-        <a href="request.html" class="btn btn-copper">Прислать список / ТЗ</a>
+        <a href="request.html" class="btn7 btn7-fill">Прислать запрос / ТЗ</a>
       </div>
-      <div class="hero-tags">
+      <div class="tags7">
         <span class="lbl">Частые запросы:</span>
-        <a href="cat-3406e.html" class="htag">3406E</a>
-        <a href="pumps.html" class="htag">насос Sundyne</a>
-        <a href="caterpillar.html" class="htag">Caterpillar</a>
-        <a href="filters.html" class="htag">фильтр Hydac</a>
-        <a href="catalog.html" class="htag">компрессор Ariel</a>
-        <a href="catalog.html" class="htag">уплотнения Eagle Burgmann</a>
+        <a href="cat-3406e.html">3406E</a>
+        <a href="pumps.html">насос Sundyne</a>
+        <a href="caterpillar.html">Caterpillar</a>
+        <a href="filters.html">фильтр Hydac</a>
+        <a href="catalog.html#compressors">компрессор Ariel</a>
+        <a href="catalog.html#drives">уплотнения Eagle Burgmann</a>
       </div>
     </div>
   </div>
 </section>
 
-<div class="trust">
-  <div class="trust-in">
-    <div class="trust-cell"><div class="trust-num">2012</div><div class="trust-lbl">год регистрации компании в Санкт-Петербурге</div></div>
-    <div class="trust-cell"><div class="trust-num">40<small>+</small></div><div class="trust-lbl">производителей в номенклатуре поставок</div></div>
-    <div class="trust-cell"><div class="trust-num">24<small> ч</small></div><div class="trust-lbl">ответ инженера на технический запрос</div></div>
-    <div class="trust-cell"><div class="trust-num">223<small>-ФЗ</small></div><div class="trust-lbl">договорная база для тендеров и госзакупок</div></div>
-    <div class="trust-cell"><div class="trust-num">РФ</div><div class="trust-lbl">доставка на промплощадки и удалённые объекты</div></div>
+<!-- ФАКТЫ -->
+<div class="facts7">
+  <div class="facts7-in">
+    <div class="fact7"><div class="n">2012</div><div class="l">год регистрации компании в г. Санкт-Петербурге</div></div>
+    <div class="fact7"><div class="n">40<i>+</i></div><div class="l">производителей в номенклатуре поставок</div></div>
+    <div class="fact7"><div class="n">24<i> ч</i></div><div class="l">подтверждаем запрос и берём его в работу</div></div>
+    <div class="fact7"><div class="n">223<i>-ФЗ</i></div><div class="l">работаем в системе госзакупок</div></div>
+    <div class="fact7"><div class="n">РФ</div><div class="l">организация доставки на промплощадки и объекты</div></div>
+    <a class="fact7" href="https://clusterunion.ru/" target="_blank" rel="noopener"><div class="n">ДОК</div><div class="l">участник Делового объединения кластеров России</div></a>
   </div>
 </div>
 
-<!-- КАТАЛОГ: реальные направления из перечня клиента -->
-<section class="cat6">
-  <div class="container">
-    <div class="section-head">
+<!-- КАТАЛОГ -->
+<section class="s7 s7-white" id="catalog">
+  <div class="w7">
+    <div class="s7-h">
       <h2>Что поставляем</h2>
-      <a href="catalog.html" class="head-link">Все категории <span class="arrow">→</span></a>
-      <a href="brands.html" class="head-link" style="margin-left:18px;">Все бренды <span class="arrow">→</span></a>
+      <a href="catalog.html">Все категории и бренды →</a>
     </div>
-    <div class="catphoto-grid">
-      <a href="pumps.html" class="catphoto"><img src="img/cat-pump.jpg" alt="Насосное оборудование" loading="lazy" decoding="async"><span>Насосы и ЗИП</span></a>
-      <a href="catalog.html" class="catphoto"><img src="img/cat-compressor.jpg" alt="Компрессорное оборудование" loading="lazy" decoding="async"><span>Компрессоры</span></a>
-      <a href="filters.html" class="catphoto"><img src="img/cat-filter.jpg" alt="Фильтры" loading="lazy" decoding="async"><span>Фильтры</span></a>
-      <a href="filters.html" class="catphoto"><img src="img/cat-heatex.jpg" alt="Теплообменники" loading="lazy" decoding="async"><span>Теплообменники</span></a>
-      <a href="catalog.html" class="catphoto"><img src="img/cat-nitrogen.jpg" alt="Азотные установки" loading="lazy" decoding="async"><span>Азотные установки</span></a>
+    <div class="bento7">
+      <a href="caterpillar.html" class="tile7"><img src="img/cat/engine.jpg" alt="Газовые и дизельные двигатели" loading="lazy" decoding="async"><div><h3>Газовые двигатели и ЗИП</h3><p>Caterpillar · Cummins · Waukesha</p></div></a>
+      <a href="pumps.html" class="tile7"><img src="img/cat/pump.jpg" alt="Насосное оборудование" loading="lazy" decoding="async"><div><h3>Насосы и ЗИП</h3><p>центробежные, секционные, герметичные</p></div></a>
+      <a href="filters.html" class="tile7"><img src="img/cat/filters.jpg" alt="Фильтры и сепараторы" loading="lazy" decoding="async"><div><h3>Фильтры и сепараторы</h3><p>фильтроэлементы, системы очистки</p></div></a>
+      <a href="catalog.html#heatex" class="tile7"><img src="img/cat/heatex.jpg" alt="Теплообменники и аппараты воздушного охлаждения" loading="lazy" decoding="async"><div><h3>Теплообменники и АВО</h3><p>пластинчатые, кожухотрубные</p></div></a>
+      <a href="catalog.html#compressors" class="tile7"><img src="img/cat-compressor.jpg" alt="Компрессорное оборудование" loading="lazy" decoding="async"><div><h3>Компрессоры и ЗИП</h3><p>поршневые, центробежные</p></div></a>
+      <a href="catalog.html#airsep" class="tile7"><img src="img/cat/airsep.jpg" alt="Воздухоразделительные установки" loading="lazy" decoding="async"><div><h3>Воздухоразделительные</h3><p>мембранные, PSA, осушители</p></div></a>
+      <a href="catalog.html#liquefiers" class="tile7"><img src="img/cat/liquefier.jpg" alt="Установки сжижения газов" loading="lazy" decoding="async"><div><h3>Установки сжижения</h3><p>СПГ, азот, кислород, аргон</p></div></a>
+      <a href="catalog.html#electrodialysis" class="tile7"><img src="img/cat/electrodialysis.jpg" alt="Установки электродиализа" loading="lazy" decoding="async"><div><h3>Электродиализ</h3><p>обессоливание, очистка стоков</p></div></a>
+      <a href="catalog.html#refrigeration" class="tile7"><img src="img/cat/refrigeration.jpg" alt="Холодильные установки" loading="lazy" decoding="async"><div><h3>Холодильные установки</h3><p>воздушные, водяные, блочные</p></div></a>
+      <a href="catalog.html#gasprep" class="tile7"><img src="img/cat/gasprep.jpg" alt="Оборудование газоподготовки" loading="lazy" decoding="async"><div><h3>Газоподготовка</h3><p>УПТГ, редуцирование, осушка</p></div></a>
     </div>
-    <div class="cat6-grid">
-      <div class="cat6-group">
-        <h4>Динамическое оборудование</h4>
-        <a href="pumps.html" class="cat6-row"><span>Насосы и запасные части<span class="brands">Sundyne, Grundfos, KSB, Klaus Union, Netzsch, Lowara, HMD</span></span><span class="arr">→</span></a>
-        <a href="catalog.html" class="cat6-row"><span>Компрессоры и запасные части<span class="brands">CAMERON, Atlas Copco, Ariel, LMF, Sundyne</span></span><span class="arr">→</span></a>
-        <a href="caterpillar.html" class="cat6-row"><span>Двигатели и запасные части<span class="brands">Caterpillar, Cummins, Waukesha, MAN · дизельные, газопоршневые</span></span><span class="arr">→</span></a>
-      </div>
-      <div class="cat6-group">
-        <h4>Фильтрация и теплообмен</h4>
-        <a href="filters.html" class="cat6-row"><span>Фильтры<span class="brands">Hydac, Facet, Parker, Donaldson</span></span><span class="arr">→</span></a>
-        <a href="filters.html" class="cat6-row"><span>Теплообменники и сепараторы<span class="brands">GEA, Alfa Laval</span></span><span class="arr">→</span></a>
-        <a href="catalog.html" class="cat6-row"><span>Клапаны и арматура<span class="brands">Emerson, Honeywell, Parker</span></span><span class="arr">→</span></a>
-      </div>
-      <div class="cat6-group">
-        <h4>Механика и приводы</h4>
-        <a href="catalog.html" class="cat6-row"><span>Редукторы, муфты, приводы<span class="brands">Flender, Voith · гидромуфты, турбопередачи</span></span><span class="arr">→</span></a>
-        <a href="catalog.html" class="cat6-row"><span>Уплотнения<span class="brands">Eagle Burgmann</span></span><span class="arr">→</span></a>
-        <a href="catalog.html" class="cat6-row"><span>РВД и рукава<span class="brands">Parker, Gates</span></span><span class="arr">→</span></a>
-      </div>
-      <div class="cat6-group">
-        <h4>Печи и горелки</h4>
-        <a href="catalog.html" class="cat6-row"><span>Горелки, факелы, печи<span class="brands">John Zink, ZEECO · термические окислители</span></span><span class="arr">→</span></a>
-      </div>
-      <div class="cat6-group">
-        <h4>Автоматика и электро</h4>
-        <a href="catalog.html" class="cat6-row"><span>Электродвигатели и автоматика<span class="brands">ABB, Honeywell</span></span><span class="arr">→</span></a>
-        <a href="catalog.html" class="cat6-row"><span>Вибромониторинг и диагностика<span class="brands">Bently Nevada</span></span><span class="arr">→</span></a>
-      </div>
-      <div class="cat6-group">
-        <h4>Расходные материалы</h4>
-        <a href="catalog.html" class="cat6-row"><span>Масла и смазки<span class="brands">Shell, Mobil, Kluber, SWD Rheinol, Ingersoll Rand</span></span><span class="arr">→</span></a>
-        <a href="catalog.html" class="cat6-row"><span>Свечи зажигания<span class="brands">MWM, Jenbacher, Denso</span></span><span class="arr">→</span></a>
-      </div>
+    <div class="more7">
+      <a href="catalog.html#turbines">ЗИП к газовым и паровым турбинам <b>→</b></a>
+      <a href="catalog.html#ejectors">Эжекторы и вакуумные системы <b>→</b></a>
+      <a href="catalog.html#valves">Запорная и регулирующая арматура <b>→</b></a>
+      <a href="catalog.html#drives">Редукторы, муфты, приводы, уплотнения <b>→</b></a>
+      <a href="catalog.html#spill">Ликвидация разливов нефти <b>→</b></a>
+      <a href="catalog.html#boats">Катера и вездеходы <b>→</b></a>
     </div>
   </div>
 </section>
 
-<!-- УСЛУГИ: компактной строкой -->
-<section class="svc6">
-  <div class="container">
-    <div class="section-head">
+<!-- УСЛУГИ -->
+<section class="s7">
+  <div class="w7">
+    <div class="s7-h">
       <h2>От технического подбора до пусконаладки</h2>
-      <a href="services.html" class="head-link">Все услуги <span class="arrow">→</span></a>
+      <a href="services.html">Все услуги →</a>
     </div>
-    <div class="svc6-grid">
-      <a href="import.html" class="svc6-card"><span class="n">01</span><h3>Критический импорт</h3><p>Находим позицию, заключаем контракт, проходим таможню и сертификацию ТР ТС.</p></a>
-      <a href="analogs.html" class="svc6-card"><span class="n">02</span><h3>Подбор аналогов</h3><p>Подбираем замену по рабочим параметрам и согласуем её с вами до заказа.</p></a>
-      <a href="manufacturing.html" class="svc6-card"><span class="n">03</span><h3>Изготовление под заказ</h3><p>Изготавливаем нестандартные узлы по вашей КД или разрабатываем её сами.</p></a>
-      <a href="engineering.html" class="svc6-card"><span class="n">04</span><h3>Инжиниринг и КД</h3><p>Считаем, чертим и согласуем техническое решение под вашу задачу.</p></a>
-      <a href="installation.html" class="svc6-card"><span class="n">05</span><h3>Монтаж и ПНР</h3><p>Монтируем на объекте, выводим на режим и обучаем ваш персонал.</p></a>
+    <div class="svc7">
+      <a href="import.html"><span class="n">01</span><h3>Критический импорт</h3><p>Находим позицию, заключаем контракт, осуществляем таможенную очистку, логистику и сертификацию.</p></a>
+      <a href="analogs.html"><span class="n">02</span><h3>Подбор аналогов</h3><p>Подбираем замену по рабочим параметрам и согласуем её с вами до заказа.</p></a>
+      <a href="manufacturing.html"><span class="n">03</span><h3>Изготовление под заказ</h3><p>Изготавливаем нестандартные узлы по вашей КД или разрабатываем её сами.</p></a>
+      <a href="engineering.html"><span class="n">04</span><h3>Инжиниринг и КД</h3><p>Осуществляем расчёт, изготавливаем чертежи, согласовываем технические решения под ваш запрос.</p></a>
+      <a href="installation.html"><span class="n">05</span><h3>Монтаж и ПНР</h3><p>В комплексе с поставкой: шефмонтаж, вывод на режим, обучение персонала.</p></a>
     </div>
   </div>
 </section>
 
-<!-- КЕЙСЫ -->
-<section class="cases6">
-  <div class="container">
-    <div class="section-head">
+<!-- ОПЫТ -->
+<section class="s7 s7-paper">
+  <div class="w7">
+    <div class="s7-h">
       <h2>Что мы уже поставили</h2>
-      <a href="projects.html" class="head-link">Все кейсы <span class="arrow">→</span></a>
+      <a href="projects.html">Весь опыт →</a>
     </div>
-    <div class="case6-grid">
-      <a href="project-drilling.html" class="case6"><img src="img/case1.webp" alt="Двигатели для буровой" loading="lazy" decoding="async"><div class="meta">Нефтегазодобыча · буровая установка</div><h3>Двигатели и ЗИП Caterpillar для действующей буровой</h3></a>
-      <a href="projects.html" class="case6" title="Материалы кейса готовятся"><img src="img/case2.webp" alt="Фильтрация для НПЗ" loading="lazy" decoding="async"><div class="meta">Нефтепереработка · НПЗ</div><h3>Система фильтрации и теплообменники для НПЗ</h3></a>
-      <a href="projects.html" class="case6" title="Материалы кейса готовятся"><img src="img/case3.webp" alt="Компрессорная станция" loading="lazy" decoding="async"><div class="meta">Энергетика · компрессорная станция</div><h3>Компрессорная станция: поставка, обвязка, ПНР</h3></a>
+    <div class="opyt7">
+      <article>
+        <div class="ph"><img src="img/opyt/filters-block-card.jpg" alt="Блок патронных фильтров для очистки сжатого воздуха" loading="lazy" decoding="async"></div>
+        <div class="bd">
+          <div class="kpi">5 <small>мкм на выходе</small></div>
+          <h3>Блок патронных фильтров для очистки сжатого воздуха</h3>
+          <p>Два сосуда из стали 09Г2С, автоматическая регенерация обратным потоком, пневмообвязка и собственный пульт управления.</p>
+          <a class="lnk" href="opyt-filter-block.html">Смотреть проект →</a>
+        </div>
+      </article>
+      <article>
+        <div class="ph"><img src="img/opyt/heatex-plate-card.jpg" alt="Разборный пластинчатый теплообменник" loading="lazy" decoding="async"></div>
+        <div class="bd">
+          <div class="kpi">6,58 <small>МВт</small></div>
+          <h3>Разборный пластинчатый теплообменник для товарной нефти</h3>
+          <p>987 м² поверхности, 410 пластин из стали 254SMO, четыре подключения DN350, масса 10,6 т.</p>
+          <a class="lnk" href="opyt-heatex-plate.html">Смотреть проект →</a>
+        </div>
+      </article>
+      <article>
+        <div class="ph"><img src="img/opyt/heatex-welded-card.jpg" alt="Сварной пластинчатый теплообменник" loading="lazy" decoding="async"></div>
+        <div class="bd">
+          <div class="kpi">256 <small>м² поверхности</small></div>
+          <h3>Сварной пластинчатый теплообменник в нестандартном исполнении</h3>
+          <p>340 кВт, 450 сварных пластин 254SMO, патрубки DN150 и DN500, стопроцентный контроль сварных швов.</p>
+          <a class="lnk" href="opyt-heatex-welded.html">Смотреть проект →</a>
+        </div>
+      </article>
     </div>
   </div>
 </section>
 
-<!-- БАЗА ЗНАНИЙ: строкой -->
-<section class="svc6" style="background:#fff; border-top:1px solid var(--line); padding:40px 0;">
-  <div class="container">
-    <div class="section-head">
+<!-- БАЗА ЗНАНИЙ -->
+<section class="s7">
+  <div class="w7">
+    <div class="s7-h">
       <h2>База знаний</h2>
-      <a href="blog.html" class="head-link">Все статьи <span class="arrow">→</span></a>
+      <a href="blog.html">Все материалы →</a>
     </div>
-    <div class="svc6-grid kb-grid">
-      <a href="blog-nitrogen.html" class="svc6-card" style="background:var(--mineral);"><span class="n">Принципы работы</span><h3>Принцип работы азотной установки</h3><p>Мембранные и PSA-генераторы: как выбрать под задачу.</p></a>
-      <a href="blog-api610.html" class="svc6-card" style="background:var(--mineral);"><span class="n">Гайды</span><h3>API 610: как подобрать насос</h3><p>Типы исполнений и параметры подбора.</p></a>
-      <a href="blog.html" class="svc6-card" style="background:var(--mineral);"><span class="n">База знаний</span><h3>Импортозамещение, документы, опросные листы</h3><p>Разбираем то, что чаще всего тормозит поставку.</p></a>
+    <div class="kb7">
+      <a href="blog-electrodialysis.html"><span class="rub">Принципы работы</span><h3>Установки электродиализа</h3><p>Мембранное обессоливание под действием электрического поля: где применяют и что нужно для подбора.</p><span class="rd">5 минут</span></a>
+      <a href="blog-liquefiers.html"><span class="rub">Принципы работы</span><h3>Ожижители газов</h3><p>Криогенные установки: какие газы ожижают, как работает цикл, что даёт собственное производство.</p><span class="rd">4 минуты</span></a>
+      <a href="blog-texas-tower.html"><span class="rub">Отраслевое</span><h3>«Техасская башня» на НПЗ</h3><p>Вертикальный объединённый теплообменник VCFE: зачем он на риформинге и чем отличается от Packinox.</p><span class="rd">9 минут</span></a>
+      <a href="blog-refrigeration.html"><span class="rub">Отраслевое</span><h3>Холодильные блоки для нефтегаза</h3><p>Варианты исполнения, состав блока и данные, по которым выполняется теплотехнический расчёт.</p><span class="rd">5 минут</span></a>
     </div>
   </div>
 </section>
 
-<!-- БЕГУЩАЯ СТРОКА: 45 реальных брендов -->
-<div class="marquee-bar" aria-label="Бренды-производители">
-  <div class="marquee-track">
-    <div class="marquee-set" id="mqSet"></div>
-    <div class="marquee-set" aria-hidden="true" id="mqSet2"></div>
+<!-- БРЕНДЫ -->
+<div class="mq7" aria-label="Бренды-производители">
+  <div class="mq7-track">
+    <div class="mq7-set" id="mqSet"></div>
+    <div class="mq7-set" aria-hidden="true" id="mqSet2"></div>
   </div>
 </div>
 
-<!-- RFQ -->
-<section class="rfq6" id="contacts">
-  <div class="rfq6-grid container">
+<!-- ЗАПРОС -->
+<section class="cta7" id="contacts">
+  <div class="cta7-in">
     <div>
-      <h2>Есть перечень оборудования или техническое задание?</h2>
-      <p class="sub">Прикрепите спецификацию, список артикулов или фото шильдика. Инженер разберёт задачу и подготовит предложение — ответ в течение 24 часов.</p>
+      <h2>Есть запрос или техническое задание?</h2>
+      <p>Прикрепите спецификацию, список артикулов или фото шильдика. Инженер разберёт задачу и подготовит ответ.</p>
       <div class="chips">
-        <span>артикул</span><span>спецификация</span><span>ТЗ</span><span>опросный лист</span><span>фото шильдика</span><span>Excel-список</span><span>чертёж</span>
+        <span>артикул</span><span>спецификация</span><span>ТЗ</span><span>опросный лист</span><span>фото шильдика</span><span>чертёж</span>
       </div>
     </div>
-    <form class="tz-form" data-tz>
+    <form class="frm7 tz-form" data-tz>
       <input type="text" required placeholder="Как к вам обращаться" aria-label="Имя">
       <input type="text" required placeholder="Телефон или e-mail" aria-label="Телефон или e-mail">
-      <label class="tz-upload"><input type="file" hidden multiple>⇪ Прикрепить ТЗ или спецификацию (PDF, DOC, XLS до 10 МБ)</label>
-      <button type="submit" class="btn btn-copper">Отправить запрос</button>
-      <p class="tz-fine">Нажимая кнопку, вы соглашаетесь на обработку данных. Ответ инженера — в течение 24 часов в рабочие дни.</p>
+      <label>⇪ Прикрепить ТЗ или спецификацию (PDF, DOC, XLS до 10 МБ)<input type="file" hidden multiple></label>
+      <button type="submit">Отправить запрос</button>
+      <p class="fine">Нажимая кнопку, вы соглашаетесь на обработку данных. Запрос подтверждаем и берём в работу в рабочие дни.</p>
     </form>
   </div>
 </section>
 
-<footer class="footer">
-  <div class="footer-in">
-    <div class="footer-grid">
-      <div>
-        <a href="index.html" class="logo"><span class="logo-plate"><img src="img/logo.png" alt="НГО" class="logo-img" style="height:34px;"></span></a>
-        <p class="footer-about" style="margin-top:14px;">Поставляем промышленное оборудование, запасные части и комплектующие. Подбор ведут инженеры. Санкт-Петербург.</p>
-      </div>
-      <div>
-        <div class="footer-h">Оборудование</div>
-        <a href="pumps.html">Насосы</a>
-        <a href="filters.html">Фильтры и теплообменники</a>
-        <a href="caterpillar.html">Двигатели и ЗИП</a>
-        <a href="brands.html">Бренды</a>
-        <a href="catalog.html">Все категории →</a>
-      </div>
-      <div>
-        <div class="footer-h">Компания</div>
-        <a href="blog.html">Блог / База знаний</a>
-        <a href="services.html">Услуги</a>
-        <a href="projects.html">Кейсы</a>
-        <a href="about.html">О компании</a>
-      </div>
-      <div>
-        <div class="footer-h">Контакты</div>
-        <a href="tel:+78127773691">+7 (812) 777-36-91</a>
-        <a href="mailto:info@ngo.spb.ru">info@ngo.spb.ru</a>
-        <a href="contacts.html">Санкт-Петербург</a>
-      </div>
+<footer class="f7">
+  <div class="f7-in">
+    <div>
+      <img src="img/logo-white.png" alt="НГО Групп" style="height:44px">
+      <p style="margin-top:14px;font-size:15px;color:rgba(255,255,255,.7);max-width:36ch">Поставляем промышленное оборудование, запасные части и комплектующие. Подбор ведут инженеры. г. Санкт-Петербург.</p>
     </div>
-    <div class="footer-bottom">
-      <span>© 2026 ООО «НГО». Поставки промышленного оборудования и ЗИП.</span>
-      <span>Санкт-Петербург · работаем по всей России</span>
-    </div>
+    <div><h4>Оборудование</h4><a href="pumps.html">Насосы</a><a href="filters.html">Фильтры и сепараторы</a><a href="catalog.html#heatex">Теплообменники и АВО</a><a href="caterpillar.html">Двигатели и ЗИП</a><a href="brands.html">Бренды</a><a href="catalog.html">Все категории →</a></div>
+    <div><h4>Компания</h4><a href="blog.html">База знаний</a><a href="projects.html">Наш опыт</a><a href="services.html">Услуги</a><a href="about.html">О компании</a></div>
+    <div><h4>Контакты</h4><a href="tel:+78127773691">+7 (812) 777-36-91</a><a href="mailto:info@ngo.group">info@ngo.group</a><a href="contacts.html">г. Санкт-Петербург</a><a href="contacts.html">Пн–Пт 10:00–18:00</a></div>
   </div>
+  <div class="f7-b"><span>© 2026 ООО «НГО». Поставки промышленного оборудования и ЗИП.</span><span>г. Санкт-Петербург, работаем по всей России</span></div>
 </footer>
 
-<script src="assets/app.js"></script>
+<script src="assets/app.js?v=20260824"></script>
 <script>
 /* Бегущая строка: 45 брендов из перечня клиента */
+var BRAND_LINKS = {
+  'Caterpillar':'caterpillar.html','Grundfos':'pump-grundfos-cr64.html','Alfa Laval':'heatex-alfa-m15.html','Parker':'filter-parker-ps604.html',
+  'Sundyne':'pumps.html','KSB':'pumps.html','Klaus Union':'pumps.html','Netzsch':'pumps.html','Lowara':'pumps.html','HMD':'pumps.html','Sunflo':'pumps.html','Bombas Marelli':'pumps.html',
+  'Hydac':'filters.html','Facet':'filters.html','Donaldson':'filters.html','GEA':'filters.html',
+  'Cummins':'caterpillar.html','Waukesha':'caterpillar.html','MAN':'caterpillar.html'
+};
+function brandHref(b){ return BRAND_LINKS[b] || 'brands.html'; }
 var BRANDS = ['CAMERON','Sundyne','Bombas Marelli','Sunflo','Klaus Union','Hydac','Facet','Grundfos','HMD','GEA','Waukesha','Caterpillar','Cummins','Parker','Ammann','Atlas Copco','Donaldson','Netzsch','Flender','Eagle Burgmann','Liebherr','Ariel','Alfa Laval','KSB','Lowara','MAN','LMF','Voith','Emerson','Bently Nevada','Honeywell','ABB','John Zink','ZEECO','Kluber','Shell','Mobil','SWD Rheinol','Ingersoll Rand','Gates','NOV','MWM','Jenbacher','Denso'];
-var html = BRANDS.map(function(b){ return '<span>' + b + '</span>'; }).join('');
+var html = BRANDS.map(function(b){ return '<a href="' + brandHref(b) + '">' + b + '</a>'; }).join('');
 document.getElementById('mqSet').innerHTML = html;
 document.getElementById('mqSet2').innerHTML = html;
 
@@ -396,6 +476,17 @@ var SEARCH_INDEX = [
   { code: 'ГОРЕЛКИ', title: 'Горелки и факелы: John Zink, ZEECO', type: 'категория', href: 'catalog.html', k: 'горелка факел печь john zink zeeco зико окислитель' },
   { code: 'МАСЛА', title: 'Масла и смазки: Shell, Mobil, Kluber', type: 'категория', href: 'catalog.html', k: 'масло смазка shell шелл mobil мобил kluber клюбер rheinol ingersoll' },
   { code: 'РВД', title: 'РВД и рукава: Parker, Gates', type: 'категория', href: 'catalog.html', k: 'рвд рукав шланг parker gates гейтс гидравлический' },
+  { code: 'ТЕПЛООБМ', title: 'Теплообменники и АВО', type: 'категория', href: 'catalog.html#heatex', k: 'теплообменник аво аппарат воздушного охлаждения пластинчатый кожухотрубный alfa laval gea' },
+  { code: 'ВРУ', title: 'Воздухоразделительные установки, осушители', type: 'категория', href: 'catalog.html#airsep', k: 'азотная установка азот кислород psa мембранная осушитель воздухоразделительная вру' },
+  { code: 'ОЖИЖ', title: 'Установки сжижения (ожижители)', type: 'категория', href: 'catalog.html#liquefiers', k: 'ожижитель сжижение спг криогенный жидкий азот гелий аргон' },
+  { code: 'ЭЛДИАЛИЗ', title: 'Установки электродиализа', type: 'категория', href: 'catalog.html#electrodialysis', k: 'электродиализ обессоливание мембрана вода стоки деминерализация' },
+  { code: 'ХОЛОД', title: 'Холодильные установки', type: 'категория', href: 'catalog.html#refrigeration', k: 'холодильная установка чиллер охлаждение газа конденсата хладагент' },
+  { code: 'ГАЗОПОДГ', title: 'Газоподготовка', type: 'категория', href: 'catalog.html#gasprep', k: 'газоподготовка уптг топливный импульсный газ редуцирование осушка' },
+  { code: 'ТУРБИНЫ', title: 'ЗИП к газовым и паровым турбинам', type: 'категория', href: 'catalog.html#turbines', k: 'турбина лопатка диск горячий тракт siemens зип' },
+  { code: 'ЭЖЕКТ', title: 'Эжекторы и вакуумные системы', type: 'категория', href: 'catalog.html#ejectors', k: 'эжектор вакуум пароструйный газоструйный жидкостный' },
+  { code: 'ЛАРН', title: 'Ликвидация разливов нефти', type: 'категория', href: 'catalog.html#spill', k: 'ларн бон скиммер сорбент разлив нефти lamor' },
+  { code: 'КАТЕРА', title: 'Катера и вездеходы', type: 'категория', href: 'catalog.html#boats', k: 'катер судно вездеход транспорт промысловый' },
+  { code: 'ОПЫТ', title: 'Наш опыт: реализованные поставки', type: 'страница', href: 'projects.html', k: 'опыт проекты поставки фильтры теплообменник изготовление' },
   { code: 'СВЕЧИ', title: 'Свечи зажигания: MWM, Jenbacher, Denso', type: 'категория', href: 'catalog.html', k: 'свеча зажигания mwm jenbacher йенбахер denso денсо' },
   { code: 'АВТОМ', title: 'Автоматика и вибромониторинг: ABB, Bently Nevada', type: 'категория', href: 'catalog.html', k: 'abb абб автоматика электродвигатель bently nevada бентли вибромониторинг диагностика' },
   { code: 'ИМПОРТ', title: 'Критический импорт', type: 'услуга', href: 'import.html', k: 'импорт зарубеж санкции поставка' },
@@ -415,7 +506,7 @@ function renderSearch(q) {
     return '<a class="sr-item" href="' + i.href + '"><span class="sr-code">' + i.code + '</span><span>' + i.title + '</span><span class="sr-type">' + i.type + '</span></a>';
   }).join('');
   if (!matches.length) {
-    h = '<div class="sr-empty">По запросу «' + q.replace(/[<>&"]/g, '') + '» в демо-базе ничего нет. <a href="request.html">Пришлите артикул — ответим в течение 24 часов →</a></div>';
+    h = '<div class="sr-empty">По запросу «' + q.replace(/[<>&"]/g, '') + '» в демо-базе ничего нет. <a href="request.html">Пришлите артикул — возьмём запрос в работу →</a></div>';
   }
   res.innerHTML = h;
   res.classList.add('open');
