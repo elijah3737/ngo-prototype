@@ -12,7 +12,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
-<link rel="stylesheet" href="assets/style.css?v=20260824d">
+<link rel="stylesheet" href="assets/style.css?v=20260824e">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"НГО Групп (ООО «НГО»)","url":"https://ngo.group","description":"Комплексные поставки промышленного оборудования и ЗИП для нефтегазовой отрасли.","address":{"@type":"PostalAddress","addressLocality":"Санкт-Петербург","addressCountry":"RU"},"telephone":"+7 (812) 777-36-91","email":"info@ngo.group","foundingDate":"2012"}</script>
 <style>
 /* ================= главная v7: промышленный плакат ================= */
@@ -24,31 +24,13 @@
   --mw:1400px;
 }
 body{background:var(--nv);color:#fff;font-family:'Onest',-apple-system,'Segoe UI',sans-serif;font-size:16px;line-height:1.55}
-.w7{max-width:var(--mw);margin:0 auto;padding:0 51px}
-
-/* шапка поверх hero */
-.h7{position:absolute;top:0;left:0;right:0;z-index:40;background:none;border:0;backdrop-filter:none}
-.h7-in{max-width:var(--mw);margin:0 auto;padding:20px 51px;display:flex;align-items:center;gap:30px;height:auto}
-.h7-brand{display:flex;align-items:center;gap:13px;flex-shrink:0}
-.h7-brand img{height:48px;width:auto;display:block}
-.h7-brand b{font-size:15px;font-weight:600;letter-spacing:-.01em;color:#fff;white-space:nowrap}
-.h7-brand small{display:block;font-family:'JetBrains Mono',ui-monospace,monospace;font-size:9.5px;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.45)}
-.h7-nav{display:flex;gap:26px;margin-left:auto;font-size:15px;font-weight:500}
-.h7-nav a{color:rgba(255,255,255,.86);transition:color .15s}
-.h7-nav a:hover{color:#fff}
-.h7-ct{display:flex;align-items:center;gap:16px}
-.h7-tel{display:inline-flex;align-items:center;padding:10px 18px;border-radius:var(--r-btn);background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.22);font-size:14px;font-weight:600;color:#fff;white-space:nowrap;backdrop-filter:blur(8px);transition:.15s}
-.h7-tel:hover{background:rgba(255,255,255,.18)}
-.h7-mail{font-family:'JetBrains Mono',ui-monospace,monospace;font-size:13px;color:rgba(255,255,255,.7);white-space:nowrap}
-.h7-mail:hover{color:#fff}
-.h7 .search-btn{border-color:rgba(255,255,255,.25);color:rgba(255,255,255,.8);background:transparent}
-.h7 .burger{border-color:rgba(255,255,255,.3);color:#fff}
+.w7{max-width:var(--mw);margin:0 auto;padding:0 48px}
 
 /* hero */
 .hero7{position:relative;min-height:min(88vh,780px);display:flex;align-items:flex-end;overflow:hidden}
 .hero7-img{position:absolute;inset:0;background:url('img/case3.webp') center/cover no-repeat;filter:grayscale(.5) contrast(1.06) brightness(.92)}
 .hero7-img::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,23,42,.86) 0%,rgba(8,23,42,.4) 32%,rgba(8,23,42,.95) 86%)}
-.hero7-in{position:relative;width:100%;max-width:var(--mw);margin:0 auto;padding:0 51px 46px}
+.hero7-in{position:relative;width:100%;max-width:var(--mw);margin:0 auto;padding:0 48px 46px}
 .hero7 h1{font-size:clamp(34px,5.6vw,76px);font-weight:800;line-height:1;letter-spacing:-.035em;max-width:16ch;text-wrap:balance;color:#fff}
 .hero7 h1 em{font-style:normal;color:var(--cp)}
 .hero7 .sub{margin-top:20px;font-size:clamp(16px,1.35vw,19px);line-height:1.45;color:rgba(255,255,255,.82);max-width:52ch}
@@ -72,7 +54,7 @@ body{background:var(--nv);color:#fff;font-family:'Onest',-apple-system,'Segoe UI
 
 /* факты */
 .facts7{background:var(--nv-2);border-top:1px solid var(--nv-line)}
-.facts7-in{max-width:var(--mw);margin:0 auto;padding:30px 51px;display:grid;grid-template-columns:repeat(6,1fr);gap:26px}
+.facts7-in{max-width:var(--mw);margin:0 auto;padding:30px 48px;display:grid;grid-template-columns:repeat(6,1fr);gap:26px}
 .facts7 .n{font-size:clamp(26px,2.6vw,40px);font-weight:700;line-height:1;letter-spacing:-.03em;color:#fff}
 .facts7 .n i{font-style:normal;font-size:.46em;color:var(--cp);margin-left:2px}
 .facts7 .l{margin-top:8px;font-size:13px;line-height:1.4;color:rgba(255,255,255,.6)}
@@ -145,7 +127,7 @@ a.fact7:hover .n{color:var(--cp)}
 
 /* CTA */
 .cta7{background:var(--cp);color:#0B1B2B;padding:70px 0}
-.cta7-in{max-width:var(--mw);margin:0 auto;padding:0 51px;display:grid;grid-template-columns:1.1fr 1fr;gap:52px;align-items:center}
+.cta7-in{max-width:var(--mw);margin:0 auto;padding:0 48px;display:grid;grid-template-columns:1.1fr 1fr;gap:52px;align-items:center}
 .cta7 h2{font-size:clamp(28px,3.8vw,50px);font-weight:800;line-height:1.02;letter-spacing:-.035em;max-width:14ch;color:#0B1B2B}
 .cta7 p{margin-top:16px;font-size:17px;line-height:1.5;max-width:44ch;color:rgba(11,27,43,.8)}
 .cta7 .chips{margin-top:18px;display:flex;flex-wrap:wrap;gap:8px}
@@ -161,15 +143,13 @@ a.fact7:hover .n{color:var(--cp)}
 
 /* футер */
 .f7{background:var(--nv);padding:52px 0 26px;border-top:1px solid var(--nv-line)}
-.f7-in{max-width:var(--mw);margin:0 auto;padding:0 51px;display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:34px}
+.f7-in{max-width:var(--mw);margin:0 auto;padding:0 48px;display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:34px}
 .f7 h4{font-family:'JetBrains Mono',ui-monospace,monospace;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.4);margin-bottom:14px}
 .f7 a{display:block;padding:5px 0;font-size:15px;color:rgba(255,255,255,.75)}
 .f7 a:hover{color:#fff}
-.f7-b{max-width:var(--mw);margin:30px auto 0;padding:18px 51px 0;border-top:1px solid var(--nv-line);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:13.5px;color:rgba(255,255,255,.42)}
+.f7-b{max-width:var(--mw);margin:30px auto 0;padding:18px 48px 0;border-top:1px solid var(--nv-line);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:13.5px;color:rgba(255,255,255,.42)}
 
-@media(max-width:1320px){ .h7-mail{display:none} }
 @media(max-width:1180px){
-  .h7-nav{display:none}
   .facts7-in{grid-template-columns:repeat(3,1fr)}
   .bento7{grid-template-columns:repeat(2,1fr)}
   .svc7{grid-template-columns:repeat(2,1fr)}
@@ -181,27 +161,17 @@ a.fact7:hover .n{color:var(--cp)}
 @media(max-width:860px){
   .s7-h{flex-direction:column;align-items:flex-start;gap:12px}
   .s7-h a{white-space:normal}
-  .h7-tel{display:none}
-  /* на узких шапка перестаёт быть накладной: иначе заголовок заезжает под логотип */
-  .h7{position:sticky;top:0;background:var(--nv);border-bottom:1px solid var(--nv-line)}
-  .h7-in{padding-top:14px;padding-bottom:14px}
   .hero7{min-height:auto}
   .hero7-in{padding-top:44px;padding-bottom:44px}
 }
 @media(max-width:700px){
-  .w7,.h7-in,.hero7-in,.facts7-in,.cta7-in,.f7-in,.f7-b{padding-left:30px;padding-right:30px}
+  .w7,.hero7-in,.facts7-in,.cta7-in,.f7-in,.f7-b{padding-left:33px;padding-right:33px}
   .facts7-in{grid-template-columns:1fr 1fr;gap:20px}
   .bento7{grid-template-columns:repeat(2,1fr);gap:10px}
-  .h7-ct{gap:10px}
   .svc7{grid-template-columns:1fr}
   .hero7{min-height:min(80vh,620px)}
   .sw7-row .btn7{width:100%}
   .s7{padding:48px 0}
-}
-@media(max-width:520px){
-  .h7-brand span{display:none}
-  .h7-in{gap:12px}
-  .h7-brand img{height:42px}
 }
 @media(max-width:470px){
   .bento7{grid-template-columns:1fr}
@@ -212,13 +182,13 @@ a.fact7:hover .n{color:var(--cp)}
 </head>
 <body>
 
-<header class="header h7">
-  <div class="header-in h7-in">
-    <a href="index.html" class="h7-brand">
+<header class="site-hdr">
+  <div class="site-hdr-in">
+    <a href="index.html" class="site-logo">
       <img src="img/logo-white.png" alt="НГО Групп">
-      <span><b>«НГО Групп»</b><small>Санкт-Петербург</small></span>
+      <span class="txt"><span class="t1">Компания</span><span class="t2">«НГО Групп»</span></span>
     </a>
-    <nav class="h7-nav" aria-label="Основная навигация">
+    <nav class="site-nav" aria-label="Основная навигация">
       <a href="catalog.html">Оборудование</a>
       <a href="services.html">Услуги</a>
       <a href="projects.html">Опыт</a>
@@ -226,11 +196,14 @@ a.fact7:hover .n{color:var(--cp)}
       <a href="about.html">О компании</a>
       <a href="contacts.html">Контакты</a>
     </nav>
-    <div class="header-cta h7-ct">
-      <button class="search-btn" id="searchBtn" aria-label="Поиск по сайту"><i class="ph ph-magnifying-glass" aria-hidden="true"></i><span>Поиск</span><kbd>/</kbd></button>
-      <a href="tel:+78127773691" class="h7-tel">+7 (812) 777-36-91</a>
-      <a href="mailto:info@ngo.group" class="h7-mail">info@ngo.group</a>
-      <button class="burger" id="burger" aria-label="Меню">☰</button>
+    <div class="site-ct">
+      <button class="site-search" id="searchBtn" aria-label="Поиск по сайту"><i class="ph ph-magnifying-glass" aria-hidden="true"></i></button>
+      <span class="site-sep" aria-hidden="true"></span>
+      <span class="site-contacts">
+        <a href="tel:+78127773691" class="tel">+7 (812) 777-36-91</a>
+        <a href="mailto:info@ngo.group" class="mail">info@ngo.group</a>
+      </span>
+      <button class="site-burger" id="burger" aria-label="Меню">☰</button>
     </div>
   </div>
 </header>

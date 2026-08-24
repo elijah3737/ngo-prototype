@@ -711,3 +711,54 @@ a.cat-row.pending:hover { background: transparent; color: var(--graphite); }
   .cat-actions { flex-wrap: wrap; }
   .cat-actions .btn { width: 100%; justify-content: center; }
 }
+
+/* ================= ЕДИНАЯ ШАПКА САЙТА (v7) ================= */
+/* Один компонент на всех страницах: значок слева, название справа от него,
+   навигация, поиск иконкой, контакты в две строки. */
+.site-hdr{position:sticky;top:0;z-index:40;background:rgba(8,23,42,.82);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.1)}
+.site-hdr-in{max-width:var(--maxw);margin:0 auto;padding:0 48px;height:76px;display:flex;align-items:center;gap:30px}
+
+.site-logo{display:flex;align-items:center;gap:13px;flex-shrink:0}
+.site-logo img{height:46px;width:auto;display:block}
+.site-logo .txt{display:flex;flex-direction:column;line-height:1.12;gap:1px}
+.site-logo .txt .t1{font-family:var(--mono);font-size:9.5px;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.5)}
+.site-logo .txt .t2{font-size:16px;font-weight:600;letter-spacing:-.01em;color:#fff;white-space:nowrap}
+
+.site-nav{display:flex;gap:26px;margin-left:auto}
+.site-nav a{position:relative;font-size:15px;font-weight:500;color:rgba(255,255,255,.84);padding:6px 0;white-space:nowrap;transition:color .15s}
+.site-nav a::after{content:'';position:absolute;left:0;right:100%;bottom:0;height:1.5px;background:var(--copper-bright);transition:right .22s ease}
+.site-nav a:hover{color:#fff}
+.site-nav a:hover::after{right:0}
+.site-nav a[aria-current=page]{color:#fff}
+.site-nav a[aria-current=page]::after{right:0;background:rgba(255,255,255,.35)}
+
+.site-ct{display:flex;align-items:center;gap:18px;flex-shrink:0}
+.site-sep{width:1px;height:28px;background:rgba(255,255,255,.16)}
+.site-search{width:38px;height:38px;display:grid;place-items:center;border:0;border-radius:8px;background:transparent;color:rgba(255,255,255,.75);font-size:19px;cursor:pointer;transition:.15s}
+.site-search:hover{background:rgba(255,255,255,.1);color:#fff}
+.site-contacts{display:flex;flex-direction:column;align-items:flex-end;line-height:1.25;gap:1px}
+.site-contacts .tel{font-size:15px;font-weight:600;color:#fff;white-space:nowrap;transition:color .15s}
+.site-contacts .tel:hover{color:var(--copper-bright)}
+.site-contacts .mail{font-family:var(--mono);font-size:12px;color:rgba(255,255,255,.55);white-space:nowrap;transition:color .15s}
+.site-contacts .mail:hover{color:#fff}
+.site-burger{display:none;width:42px;height:42px;border:1px solid rgba(255,255,255,.28);border-radius:8px;background:none;color:#fff;font-size:17px;cursor:pointer}
+.site-burger:hover{background:rgba(255,255,255,.1)}
+
+.site-hdr + .mobile-menu,.mobile-menu{inset:76px 0 0;background:var(--teal-deep);padding:26px 48px}
+.mobile-menu a{color:#fff;border-color:rgba(255,255,255,.12)}
+
+@media(max-width:1240px){ .site-nav{gap:20px} .site-hdr-in{gap:22px} }
+@media(max-width:1120px){
+  .site-nav{display:none}
+  .site-burger{display:grid;place-items:center}
+  .site-hdr-in{height:70px;gap:16px}
+  .site-ct{margin-left:auto}
+  .mobile-menu{inset:70px 0 0}
+}
+@media(max-width:820px){ .site-contacts,.site-sep{display:none} }
+@media(max-width:700px){
+  .site-hdr-in{padding:0 33px}
+  .mobile-menu{padding:24px 33px}
+  .site-logo img{height:40px}
+}
+@media(max-width:520px){ .site-logo .txt{display:none} }
