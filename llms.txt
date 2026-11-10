@@ -5,6 +5,12 @@
 ## Оборудование
 - [Каталог](https://ngo.group/catalog/): насосы, компрессоры, газовые двигатели, фильтрация, теплообмен, воздухоразделительные, ожижители, электродиализ, холодильные установки, газоподготовка
 - [Насосы и ЗИП](https://ngo.group/pumps/): центробежные, секционные, герметичные с магнитной муфтой, погружные; подбор по опросному листу
+- [Запорная и регулирующая арматура](https://ngo.group/valves/): шаровые краны, дисковые затворы, задвижки, регулирующие клапаны, криогенные и Fire Safe исполнения
+- [Ликвидация разливов нефти](https://ngo.group/spill/): боновые заграждения, скиммеры, насосы и силовые установки, катушки, системы нанесения диспергентов
+- [Катера и вездеходы](https://ngo.group/boats/): аппарельные катера Apparel, пожарно-спасательные катера, снегоболотоходы АРХАНТ
+- [Редукторы, муфты, приводы, уплотнения](https://ngo.group/drives/): SEW-Eurodrive, Flender, Voith, ESCO, торцевые уплотнения EagleBurgmann и GEA
+- [Электродвигатели, автоматика, диагностика](https://ngo.group/electro/): электродвигатели ABB, WEG, VEM; Siemens SIMATIC, КИПиА; вибромониторинг Bently Nevada
+- [Масла, смазки, свечи зажигания](https://ngo.group/oils/): масла Shell, Mobil, SWD Rheinol, Chevron; смазки Klüber; свечи DENSO
 - [Фильтры, фильтроэлементы, сепараторы](https://ngo.group/filters/): Hydac, Facet, Parker, Donaldson
 - [Двигатели и ЗИП](https://ngo.group/caterpillar/): Caterpillar, Cummins, Waukesha — газовые и дизельные
 - [Бренды](https://ngo.group/brands/): Alfa Laval, Ariel, Atlas Copco, Caterpillar, Cummins, Grundfos, HYDAC, Parker, Sundyne, Waukesha и другие

@@ -12,7 +12,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
-<link rel="stylesheet" href="assets/style.css?v=20261005h">
+<link rel="stylesheet" href="assets/style.css?v=20261010e">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"НГО Групп (ООО «НГО»)","url":"https://ngo.group","description":"Комплексные поставки промышленного оборудования и ЗИП для нефтегазовой и других отраслей.","address":{"@type":"PostalAddress","addressLocality":"Санкт-Петербург","addressCountry":"RU"},"telephone":"+7 (812) 777-36-91","email":"info@ngo.group","foundingDate":"2012"}</script>
 <style>
 /* ================= главная v7: промышленный плакат ================= */
@@ -281,10 +281,10 @@ a.fact7:hover .n{color:var(--cp)}
     <div class="more7">
       <a href="catalog.html#turbines">ЗИП к газовым и паровым турбинам <b>→</b></a>
       <a href="catalog.html#ejectors">Эжекторы и вакуумные системы <b>→</b></a>
-      <a href="catalog.html#valves">Запорная и регулирующая арматура <b>→</b></a>
-      <a href="catalog.html#drives">Редукторы, муфты, приводы, уплотнения <b>→</b></a>
-      <a href="catalog.html#spill">Ликвидация разливов нефти <b>→</b></a>
-      <a href="catalog.html#boats">Катера и вездеходы <b>→</b></a>
+      <a href="valves.html">Запорная и регулирующая арматура <b>→</b></a>
+      <a href="drives.html">Редукторы, муфты, приводы, уплотнения <b>→</b></a>
+      <a href="spill.html">Ликвидация разливов нефти <b>→</b></a>
+      <a href="boats.html">Катера и вездеходы <b>→</b></a>
     </div>
   </div>
 </section>
@@ -402,7 +402,7 @@ a.fact7:hover .n{color:var(--cp)}
   <div class="f7-b"><span>© 2026 ООО «НГО». Поставки промышленного оборудования и ЗИП.</span><span>г. Санкт-Петербург, работаем по всей России</span></div>
 </footer>
 
-<script src="assets/app.js?v=20260824"></script>
+<script src="assets/app.js?v=20261010"></script>
 <script>
 /* Бегущая строка: 49 брендов из перечня клиента */
 var BRAND_LINKS = {
@@ -434,7 +434,7 @@ var SEARCH_INDEX = [
   { code: 'МУФТЫ', title: 'Редукторы и муфты: Flender, Voith', type: 'категория', href: 'catalog.html', k: 'редуктор муфта flender флендер voith фойт гидромуфта привод' },
   { code: 'УПЛОТН', title: 'Уплотнения Eagle Burgmann', type: 'категория', href: 'catalog.html', k: 'уплотнение eagle burgmann игл бургман торцевое' },
   { code: 'ГОРЕЛКИ', title: 'Горелки и факелы: John Zink, ZEECO', type: 'категория', href: 'catalog.html', k: 'горелка факел печь john zink zeeco зико окислитель' },
-  { code: 'МАСЛА', title: 'Масла и смазки: Shell, Mobil, Kluber', type: 'категория', href: 'catalog.html', k: 'масло смазка shell шелл mobil мобил kluber клюбер rheinol ingersoll' },
+  { code: 'МАСЛА', title: 'Масла и смазки: Shell, Mobil, Kluber', type: 'категория', href: 'oils.html', k: 'масло смазка shell шелл mobil мобил kluber клюбер rheinol ingersoll' },
   { code: 'РВД', title: 'РВД и рукава: Parker, Gates', type: 'категория', href: 'catalog.html', k: 'рвд рукав шланг parker gates гейтс гидравлический' },
   { code: 'ТЕПЛООБМ', title: 'Теплообменники и АВО', type: 'категория', href: 'catalog.html#heatex', k: 'теплообменник аво аппарат воздушного охлаждения пластинчатый кожухотрубный alfa laval gea' },
   { code: 'ВРУ', title: 'Воздухоразделительные установки, осушители', type: 'категория', href: 'catalog.html#airsep', k: 'азотная установка азот кислород psa мембранная осушитель воздухоразделительная вру' },
@@ -444,11 +444,11 @@ var SEARCH_INDEX = [
   { code: 'ГАЗОПОДГ', title: 'Газоподготовка', type: 'категория', href: 'catalog.html#gasprep', k: 'газоподготовка уптг топливный импульсный газ редуцирование осушка' },
   { code: 'ТУРБИНЫ', title: 'ЗИП к газовым и паровым турбинам', type: 'категория', href: 'catalog.html#turbines', k: 'турбина лопатка диск горячий тракт siemens зип' },
   { code: 'ЭЖЕКТ', title: 'Эжекторы и вакуумные системы', type: 'категория', href: 'catalog.html#ejectors', k: 'эжектор вакуум пароструйный газоструйный жидкостный' },
-  { code: 'ЛАРН', title: 'Ликвидация разливов нефти', type: 'категория', href: 'catalog.html#spill', k: 'ларн бон скиммер сорбент разлив нефти lamor' },
-  { code: 'КАТЕРА', title: 'Катера и вездеходы', type: 'категория', href: 'catalog.html#boats', k: 'катер судно вездеход транспорт промысловый' },
+  { code: 'ЛАРН', title: 'Ликвидация разливов нефти', type: 'категория', href: 'spill.html', k: 'ларн бон скиммер сорбент разлив нефти lamor' },
+  { code: 'КАТЕРА', title: 'Катера и вездеходы', type: 'категория', href: 'boats.html', k: 'катер судно вездеход транспорт промысловый' },
   { code: 'ОПЫТ', title: 'Наш опыт: реализованные поставки', type: 'страница', href: 'projects.html', k: 'опыт проекты поставки фильтры теплообменник изготовление' },
-  { code: 'СВЕЧИ', title: 'Свечи зажигания: MWM, Jenbacher, Denso', type: 'категория', href: 'catalog.html', k: 'свеча зажигания mwm jenbacher йенбахер denso денсо' },
-  { code: 'АВТОМ', title: 'Автоматика и вибромониторинг: ABB, Bently Nevada', type: 'категория', href: 'catalog.html', k: 'abb абб автоматика электродвигатель bently nevada бентли вибромониторинг диагностика' },
+  { code: 'СВЕЧИ', title: 'Свечи зажигания: MWM, Jenbacher, Denso', type: 'категория', href: 'oils.html', k: 'свеча зажигания mwm jenbacher йенбахер denso денсо' },
+  { code: 'АВТОМ', title: 'Автоматика и вибромониторинг: ABB, Bently Nevada', type: 'категория', href: 'electro.html', k: 'abb абб автоматика электродвигатель bently nevada бентли вибромониторинг диагностика' },
   { code: 'ИМПОРТ', title: 'Критический импорт', type: 'услуга', href: 'import.html', k: 'импорт зарубеж санкции поставка' },
   { code: 'АНАЛОГ', title: 'Подбор аналогов', type: 'услуга', href: 'analogs.html', k: 'аналог импортозамещение замена' }
 ];

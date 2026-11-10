@@ -22,13 +22,16 @@ var S_CATS = [
   { n: 'Двигатели и запасные части', h: 'caterpillar.html' },
   { n: 'Фильтры', h: 'filters.html' },
   { n: 'Теплообменники и сепараторы', h: 'filters.html' },
-  { n: 'Клапаны и арматура', h: 'catalog.html' },
-  { n: 'Редукторы, муфты, приводы', h: 'catalog.html' },
-  { n: 'Уплотнения', h: 'catalog.html' },
+  { n: 'Клапаны и арматура', h: 'valves.html' },
+  { n: 'Редукторы, муфты, приводы', h: 'drives.html' },
+  { n: 'Уплотнения', h: 'drives.html' },
   { n: 'Горелки, факелы, печи', h: 'catalog.html' },
-  { n: 'Масла и смазки', h: 'catalog.html' },
+  { n: 'Масла и смазки', h: 'oils.html' },
   { n: 'РВД и рукава', h: 'catalog.html' },
-  { n: 'Свечи зажигания', h: 'catalog.html' }
+  { n: 'Свечи зажигания', h: 'oils.html' },
+  { n: 'Электродвигатели, автоматика, диагностика', h: 'electro.html' },
+  { n: 'Ликвидация разливов нефти (ЛАРН)', h: 'spill.html' },
+  { n: 'Катера и вездеходы', h: 'boats.html' }
 ];
 var S_ITEMS = [
   { n: 'Двигатель Caterpillar 3406E', s: '3406E', c: 'Двигатели', h: 'cat-3406e.html', k: 'кат катерпиллер дизель буровая' },
@@ -42,13 +45,17 @@ var S_ITEMS = [
   { n: 'Фильтры Hydac, Facet, Donaldson', s: 'подбор', c: 'Фильтры', h: 'filters.html', k: 'хайдак фасет дональдсон' },
   { n: 'Компрессоры CAMERON, Atlas Copco, Ariel', s: 'подбор', c: 'Компрессоры', h: 'catalog.html', k: 'камерон атлас копко ариэль lmf' },
   { n: 'Теплообменники GEA, Alfa Laval', s: 'подбор', c: 'Теплообмен', h: 'filters.html', k: 'геа сепараторы' },
-  { n: 'Уплотнения Eagle Burgmann', s: 'подбор', c: 'Уплотнения', h: 'catalog.html', k: 'игл бургман торцевые' },
-  { n: 'Клапаны Emerson, Honeywell', s: 'подбор', c: 'Арматура', h: 'catalog.html', k: 'эмерсон ханивел' },
-  { n: 'Муфты и приводы Flender, Voith', s: 'подбор', c: 'Приводы', h: 'catalog.html', k: 'флендер фойт гидромуфты турбопередачи редукторы' },
+  { n: 'Уплотнения Eagle Burgmann', s: 'подбор', c: 'Уплотнения', h: 'drives.html', k: 'игл бургман торцевые' },
+  { n: 'Клапаны Emerson, Honeywell', s: 'подбор', c: 'Арматура', h: 'valves.html', k: 'эмерсон ханивел' },
+  { n: 'Муфты и приводы Flender, Voith', s: 'подбор', c: 'Приводы', h: 'drives.html', k: 'флендер фойт гидромуфты турбопередачи редукторы' },
   { n: 'Горелки John Zink, ZEECO', s: 'подбор', c: 'Печи', h: 'catalog.html', k: 'зик зико факелы окислители' },
-  { n: 'Масла Shell, Mobil, Kluber', s: 'подбор', c: 'Расходники', h: 'catalog.html', k: 'шелл мобил клюбер смазки rheinol ingersoll' },
-  { n: 'Свечи зажигания MWM, Jenbacher, Denso', s: 'подбор', c: 'Расходники', h: 'catalog.html', k: 'йенбахер денсо' },
-  { n: 'Вибромониторинг Bently Nevada', s: 'подбор', c: 'Автоматика', h: 'catalog.html', k: 'бентли невада диагностика abb' }
+  { n: 'Масла Shell, Mobil, Kluber', s: 'подбор', c: 'Расходники', h: 'oils.html', k: 'шелл мобил клюбер смазки rheinol ingersoll' },
+  { n: 'Свечи зажигания MWM, Jenbacher, Denso', s: 'подбор', c: 'Расходники', h: 'oils.html', k: 'йенбахер денсо' },
+  { n: 'Редукторы SEW-Eurodrive, муфты ESCO', s: 'подбор', c: 'Приводы', h: 'drives.html', k: 'сев евродрайв мотор-редуктор эско муфта' },
+  { n: 'Электродвигатели ABB, WEG, VEM', s: 'подбор', c: 'Электро', h: 'electro.html', k: 'абб вег вем электродвигатель siemens simatic сименс' },
+  { n: 'Катера Apparel, вездеходы АРХАНТ', s: 'подбор', c: 'Транспорт', h: 'boats.html', k: 'катер аппарель архант снегоболотоход амфибия вездеход' },
+  { n: 'Боны и скиммеры ЛАРН', s: 'подбор', c: 'ЛАРН', h: 'spill.html', k: 'бон скиммер разлив нефти ларн' },
+  { n: 'Вибромониторинг Bently Nevada', s: 'подбор', c: 'Автоматика', h: 'electro.html', k: 'бентли невада диагностика abb' }
 ];
 var searchPanel = document.getElementById('searchPanel');
 var searchBackdrop = document.getElementById('searchBackdrop');

@@ -879,3 +879,32 @@ a.cat-row.pending:hover { background: transparent; color: var(--graphite); }
   .tag-row > a, .tag-row > span:not(.small-label), .brand-static span { min-height: 44px; }
   a.lnk { display: inline-flex; align-items: center; min-height: 44px; }
 }
+
+/* 10.10.2026 — страницы направлений по материалам клиента (valves, spill, boats, drives, electro, oils) */
+.cat-bento.dir-bento { grid-auto-rows: minmax(132px, auto); }
+.dir-bento .cat-cell .cat-desc { max-width: 52ch; }
+.cat-bento.n4 .cat-c, .cat-bento.n4 .cat-e { grid-column: span 6; }
+.cat-bento.n3 .cat-e { grid-column: span 12; }
+.dir-intro { padding: 44px 0 8px; }
+.dir-intro .seo-grid p { color: var(--graphite); font-size: 17px; line-height: 1.6; }
+.dir-gallery { padding: 28px 0 0; }
+.gal-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; margin-top: 18px; }
+.gal-grid.g3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.gal { margin: 0; min-width: 0; background: #fff; border: 1px solid var(--line); border-radius: var(--r-card); overflow: hidden; display: flex; flex-direction: column; }
+.gal img { display: block; width: 100%; height: auto; aspect-ratio: 1000 / 679; object-fit: contain; background: #fff; }
+.gal figcaption { padding: 14px 18px 16px; border-top: 1px solid var(--line); font-size: 14.5px; line-height: 1.45; color: var(--ink-60); }
+.brand-strip .brand-sub { display: block; margin-top: 26px; }
+.brand-strip .brand-note { margin-top: 14px; max-width: 70ch; font-size: 17px; line-height: 1.55; color: var(--graphite); }
+@media (max-width: 960px) { .gal-grid, .gal-grid.g3 { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 560px) { .gal-grid { gap: 10px; } .gal figcaption { padding: 10px 12px 12px; font-size: 13px; } .dir-gallery { padding-top: 20px; } .dir-intro { padding-top: 36px; } }
+.dir-bento .cat-cell.has-bg::after { background: linear-gradient(180deg, rgba(10,28,48,.72) 0%, rgba(10,28,48,.3) 30%, rgba(10,28,48,.45) 55%, rgba(10,28,48,.92) 85%); }
+.dir-bento .cat-cell.has-bg > img { opacity: 1; }
+.dir-bento .cat-cell > .pending-tag { align-self: flex-start; }
+.dir-bento .cat-cell.has-prod { background: #fff; border: 1px solid var(--line); }
+.dir-bento .cat-cell.has-prod::before, .dir-bento .cat-cell.has-prod::after { display: none; }
+.dir-bento .cat-cell.has-prod > img { position: static; inset: auto; display: block; width: 100%; flex: 1 1 auto; min-height: 150px; max-height: 240px; object-fit: contain; opacity: 1; mix-blend-mode: normal; margin: 4px 0 18px; }
+.dir-bento .cat-cell.has-prod h3 { color: var(--graphite); }
+.dir-bento .cat-cell.has-prod .cat-desc { color: var(--ink-60); }
+.dir-bento .cat-cell.has-prod .cat-count { color: var(--ink-60); padding-bottom: 0; margin-bottom: 0; }
+.dir-bento .cat-cell.has-prod .pending-tag { background: var(--mineral-2); color: var(--ink-60); }
+@media (max-width: 760px) { .dir-bento .cat-cell.has-prod > img { min-height: 170px; max-height: 200px; } }
