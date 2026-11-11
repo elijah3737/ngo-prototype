@@ -4,15 +4,52 @@ if (burger && mobileMenu) {
   burger.addEventListener('click', function () { mobileMenu.classList.toggle('open'); });
   mobileMenu.addEventListener('click', function (e) { if (e.target.tagName === 'A') mobileMenu.classList.remove('open'); });
 }
+/* ---------- формы заявок: отправка в send.php; на github.io — демо-режим ---------- */
+var FORM_T0 = Date.now();
+var FORM_DEMO = /github\.io$/.test(location.hostname);
 document.addEventListener('submit', function (e) {
   var form = e.target.closest('form[data-tz]');
   if (!form) return;
   e.preventDefault();
   if (!form.checkValidity()) { form.reportValidity(); return; }
-  var ok = document.createElement('div');
-  ok.className = 'form-success';
-  ok.innerHTML = '<h3>Запрос получен</h3><p>Инженер изучит данные и свяжется с вами в течение рабочего дня. Демо-режим прототипа: данные никуда не отправлены.</p>';
-  form.replaceWith(ok);
+  function done(title, text, isErr) {
+    var box = document.createElement('div');
+    box.className = 'form-success';
+    box.innerHTML = '<h3>' + title + '</h3><p>' + text + '</p>';
+    if (isErr) { var old = form.querySelector('.form-error'); if (old) old.remove(); box.className += ' form-error'; form.appendChild(box); }
+    else form.replaceWith(box);
+  }
+  var okText = 'Инженер изучит данные и свяжется с вами в течение рабочего дня.';
+  if (FORM_DEMO) { done('Запрос получен', okText + ' Демо-режим прототипа: данные никуда не отправлены.'); return; }
+  var fields = [], fd = new FormData();
+  form.querySelectorAll('input, textarea, select').forEach(function (el) {
+    if (el.type === 'file') { Array.prototype.forEach.call(el.files, function (f) { fd.append('files[]', f, f.name); }); return; }
+    if (el.type === 'submit' || el.type === 'button' || el.name === 'website') return;
+    if ((el.type === 'checkbox' || el.type === 'radio') && !el.checked) return;
+    var k = el.getAttribute('aria-label') || el.placeholder || el.name || 'Поле';
+    if (el.value) fields.push({ k: k, v: el.value });
+  });
+  fd.append('fields', JSON.stringify(fields));
+  fd.append('page', document.title + ' — ' + location.pathname);
+  fd.append('t', Math.round((Date.now() - FORM_T0) / 1000));
+  var hp = form.querySelector('[name=website]'); fd.append('website', hp ? hp.value : '');
+  var btn = form.querySelector('[type=submit]'); if (btn) { btn.disabled = true; btn.dataset.txt = btn.textContent; btn.textContent = 'Отправляем…'; }
+  fetch('send.php', { method: 'POST', body: fd })
+    .then(function (r) { return r.json().then(function (j) { return { r: r, j: j }; }); })
+    .then(function (x) {
+      if (x.j && x.j.ok) { done('Запрос получен', okText); return; }
+      var msg = x.r.status === 413 ? 'Файлы больше 10 МБ — уменьшите или пришлите на info@ngo.group.' : 'Не получилось отправить. Напишите на info@ngo.group или позвоните — ответим так же быстро.';
+      done('Запрос не отправлен', msg, true);
+    })
+    .catch(function () { done('Запрос не отправлен', 'Нет связи с сервером. Напишите на info@ngo.group.', true); })
+    .finally(function () { if (btn) { btn.disabled = false; btn.textContent = btn.dataset.txt; } });
+});
+// honeypot-поле во все формы (скрыто от людей)
+document.querySelectorAll('form[data-tz]').forEach(function (f) {
+  var hp = document.createElement('input');
+  hp.type = 'text'; hp.name = 'website'; hp.tabIndex = -1; hp.autocomplete = 'off';
+  hp.setAttribute('aria-hidden', 'true'); hp.style.cssText = 'position:absolute;left:-9999px;width:1px;height:1px;opacity:0';
+  f.appendChild(hp);
 });
 
 /* ---------- выпадающий поиск из шапки (по всем страницам) ---------- */

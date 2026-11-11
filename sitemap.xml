@@ -1,78 +1,78 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Карта сайта прототипа. URL — будущая структура ЧПУ на прод-домене ngo.group -->
+<!-- Карта сайта ngo.group: адреса = файлы .html (ЧПУ без .html ломают относительные ссылки) -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://ngo.group/</loc></url>
-  <url><loc>https://ngo.group/catalog/</loc></url>
-  <url><loc>https://ngo.group/pumps/</loc></url>
-  <url><loc>https://ngo.group/valves/</loc></url>
-  <url><loc>https://ngo.group/spill/</loc></url>
-  <url><loc>https://ngo.group/boats/</loc></url>
-  <url><loc>https://ngo.group/drives/</loc></url>
-  <url><loc>https://ngo.group/electro/</loc></url>
-  <url><loc>https://ngo.group/oils/</loc></url>
-  <url><loc>https://ngo.group/filters/</loc></url>
-  <url><loc>https://ngo.group/brands/</loc></url>
-  <url><loc>https://ngo.group/caterpillar/</loc></url>
-  <url><loc>https://ngo.group/cat-3406e/</loc></url>
-  <url><loc>https://ngo.group/services/</loc></url>
-  <url><loc>https://ngo.group/import/</loc></url>
-  <url><loc>https://ngo.group/analogs/</loc></url>
-  <url><loc>https://ngo.group/manufacturing/</loc></url>
-  <url><loc>https://ngo.group/engineering/</loc></url>
-  <url><loc>https://ngo.group/installation/</loc></url>
-  <url><loc>https://ngo.group/projects/</loc></url>
-  <url><loc>https://ngo.group/project-drilling/</loc></url>
-  <url><loc>https://ngo.group/blog/</loc></url>
-  <url><loc>https://ngo.group/blog-nitrogen/</loc></url>
-  <url><loc>https://ngo.group/request/</loc></url>
-  <url><loc>https://ngo.group/about/</loc></url>
-  <url><loc>https://ngo.group/contacts/</loc></url>
-  <url><loc>https://ngo.group/pump-grundfos-cr64/</loc></url>
-  <url><loc>https://ngo.group/pump-cns-180-1900/</loc></url>
-  <url><loc>https://ngo.group/filter-parker-ps604/</loc></url>
-  <url><loc>https://ngo.group/heatex-alfa-m15/</loc></url>
-  <url><loc>https://ngo.group/cat-3512/</loc></url>
-  <url><loc>https://ngo.group/cat-c27/</loc></url>
-  <url><loc>https://ngo.group/blog-filters/</loc></url>
-  <url><loc>https://ngo.group/blog-heatex/</loc></url>
+  <url><loc>https://ngo.group/catalog.html</loc></url>
+  <url><loc>https://ngo.group/pumps.html</loc></url>
+  <url><loc>https://ngo.group/valves.html</loc></url>
+  <url><loc>https://ngo.group/spill.html</loc></url>
+  <url><loc>https://ngo.group/boats.html</loc></url>
+  <url><loc>https://ngo.group/drives.html</loc></url>
+  <url><loc>https://ngo.group/electro.html</loc></url>
+  <url><loc>https://ngo.group/oils.html</loc></url>
+  <url><loc>https://ngo.group/filters.html</loc></url>
+  <url><loc>https://ngo.group/brands.html</loc></url>
+  <url><loc>https://ngo.group/caterpillar.html</loc></url>
+  <url><loc>https://ngo.group/cat-3406e.html</loc></url>
+  <url><loc>https://ngo.group/services.html</loc></url>
+  <url><loc>https://ngo.group/import.html</loc></url>
+  <url><loc>https://ngo.group/analogs.html</loc></url>
+  <url><loc>https://ngo.group/manufacturing.html</loc></url>
+  <url><loc>https://ngo.group/engineering.html</loc></url>
+  <url><loc>https://ngo.group/installation.html</loc></url>
+  <url><loc>https://ngo.group/projects.html</loc></url>
+  <url><loc>https://ngo.group/project-drilling.html</loc></url>
+  <url><loc>https://ngo.group/blog.html</loc></url>
+  <url><loc>https://ngo.group/blog-nitrogen.html</loc></url>
+  <url><loc>https://ngo.group/request.html</loc></url>
+  <url><loc>https://ngo.group/about.html</loc></url>
+  <url><loc>https://ngo.group/contacts.html</loc></url>
+  <url><loc>https://ngo.group/pump-grundfos-cr64.html</loc></url>
+  <url><loc>https://ngo.group/pump-cns-180-1900.html</loc></url>
+  <url><loc>https://ngo.group/filter-parker-ps604.html</loc></url>
+  <url><loc>https://ngo.group/heatex-alfa-m15.html</loc></url>
+  <url><loc>https://ngo.group/cat-3512.html</loc></url>
+  <url><loc>https://ngo.group/cat-c27.html</loc></url>
+  <url><loc>https://ngo.group/blog-filters.html</loc></url>
+  <url><loc>https://ngo.group/blog-heatex.html</loc></url>
   <url>
-    <loc>https://ngo.group/blog-electrodialysis/</loc>
+    <loc>https://ngo.group/blog-electrodialysis.html</loc>
     <lastmod>2026-08-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://ngo.group/blog-liquefiers/</loc>
+    <loc>https://ngo.group/blog-liquefiers.html</loc>
     <lastmod>2026-08-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://ngo.group/blog-refrigeration/</loc>
+    <loc>https://ngo.group/blog-refrigeration.html</loc>
     <lastmod>2026-08-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://ngo.group/blog-texas-tower/</loc>
+    <loc>https://ngo.group/blog-texas-tower.html</loc>
     <lastmod>2026-08-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://ngo.group/opyt-filter-block/</loc>
+    <loc>https://ngo.group/opyt-filter-block.html</loc>
     <lastmod>2026-08-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://ngo.group/opyt-heatex-plate/</loc>
+    <loc>https://ngo.group/opyt-heatex-plate.html</loc>
     <lastmod>2026-08-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://ngo.group/opyt-heatex-welded/</loc>
+    <loc>https://ngo.group/opyt-heatex-welded.html</loc>
     <lastmod>2026-08-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>

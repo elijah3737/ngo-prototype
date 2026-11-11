@@ -1,0 +1,38 @@
+AddDefaultCharset UTF-8
+Options -Indexes
+
+<FilesMatch "^(send-config(\.sample)?\.php|send\.log)$">
+  Require all denied
+</FilesMatch>
+
+# ---------- 301 со старого WordPress (снимок sitemap 11.11.2026: data/старый-сайт-urls-2026-11-11.txt) ----------
+RewriteEngine On
+RewriteBase /
+
+# http → https и www → без www (SSL Let's Encrypt с 11.11.2026, продлевать до 09.02.2027 — tools/ssl/issue.sh)
+RewriteCond %{HTTP_HOST} ^(www\.)?ngo\.group$ [NC]
+RewriteCond %{HTTP:X-Forwarded-Proto} !https
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://ngo.group/$1 [R=301,L]
+RewriteCond %{HTTP_HOST} ^www\.ngo\.group$ [NC]
+RewriteRule ^(.*)$ https://ngo.group/$1 [R=301,L]
+
+RewriteRule ^contacts/?$ https://ngo.group/contacts.html [R=301,L]
+RewriteRule ^o-kompanii/?$ https://ngo.group/about.html [R=301,L]
+RewriteRule ^filters/?$ https://ngo.group/filters.html [R=301,L]
+RewriteRule ^nasosnoe-oborudovanie/?$ https://ngo.group/pumps.html [R=301,L]
+RewriteRule ^masla/?$ https://ngo.group/oils.html [R=301,L]
+RewriteRule ^kompressornoe-oborudovanie/?$ https://ngo.group/catalog.html#compressors [R=301,NE,L]
+RewriteRule ^azotnie-i-kislorodnie/?$ https://ngo.group/catalog.html#airsep [R=301,NE,L]
+RewriteRule ^teploobmen/?$ https://ngo.group/catalog.html#heatex [R=301,NE,L]
+RewriteRule ^(konstrukcii-iz-nerzhaveyuschey|block-moduli)/?$ https://ngo.group/manufacturing.html [R=301,L]
+# направлений нет на новом сайте → каталог
+RewriteRule ^(ventilyacionnoe-oborudovanie|naruzhnoe-osveschenie|rukava-visokogo-davleniya|laboratornoe-oborudovanie|zip-komplekt)/?$ https://ngo.group/catalog.html [R=301,L]
+# английской версии на новом сайте нет
+RewriteRule ^en(/.*)?$ https://ngo.group/ [R=301,L]
+# служебные адреса WordPress
+RewriteRule ^(wp-admin|wp-login\.php|wp-content|wp-includes|wp-json|feed|xmlrpc\.php)(/.*)?$ https://ngo.group/ [R=301,L]
+RewriteRule ^wp-sitemap.*\.xml$ https://ngo.group/sitemap.xml [R=301,L]
+# /slug/ и /slug → /slug.html, если такая страница есть (старые canonical прототипа)
+RewriteCond %{DOCUMENT_ROOT}/$1.html -f
+RewriteRule ^([a-z0-9-]+)/?$ https://ngo.group/$1.html [R=301,L]
